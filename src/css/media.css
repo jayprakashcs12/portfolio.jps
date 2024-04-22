@@ -1,0 +1,27 @@
+@media only screen and (min-width: 320px) and (max-width: 575.9px) {
+
+    .nav-content, .pro-conent {
+        --bs-gutter-x: 1.5rem !important;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 991.9px) {
+    
+    .nav-links {
+        margin: 10px 0 !important;
+        text-transform: none;
+    }
+
+    .nav-links, .pro-button {
+        text-align: center !important;
+    }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1199.9px) {
+
+    .nav-links {
+        text-transform:initial !important;
+    }
+
+}

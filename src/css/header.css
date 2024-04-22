@@ -1,0 +1,46 @@
+.pro-button,
+.pro-container,
+.pro-navbar {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    transition: 0.1s;
+}
+
+.pro-navbar {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.dark .pro-button,
+.dark .pro-container,
+.dark .pro-navbar {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+}
+
+.main-navbar {
+    box-shadow: rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.main-navbar.dark {
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.pro-button {
+    outline: none;
+    border: none;
+}
+
+.nav-links {
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 10px 20px;
+}
+
+.nav-links.active {
+    color: #4E81D5;
+}
+
+.nav-content {
+    --bs-gutter-x:0;
+}
