@@ -30,8 +30,8 @@ const Footer = ({ theme }) => {
                         </p>
                         <ol style={listItemStyle}>
                             {contactItems.map((item, index) => (
-                                <li key={index}>
-                                    <a href={item.url} target="_blank" rel="noopener noreferrer" style={linkStyle(theme)}>
+                                <li key={index} style={{marginTop:"2%"}}>
+                                    <a href={item.url} target="_blank" style={linkStyle(theme)}>
                                         {item.icon} &nbsp; +91-{item.text}
                                     </a>
                                 </li>
@@ -39,10 +39,10 @@ const Footer = ({ theme }) => {
                         </ol>
                     </Col>
                     <Col lg={4} md={6} sm={12} className='mt-4'>
-                        kkjkjkj
+                        <h3>Social Links</h3>
                     </Col>
                     <Col lg={4} md={6} sm={12} className='mt-4'>
-                        kkjkjkj
+                        <h3>Social Links</h3>
                     </Col>
                 </Row>
             </Container>
