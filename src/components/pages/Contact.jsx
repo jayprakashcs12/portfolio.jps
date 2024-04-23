@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
-import toast from "react-hot-toast";
+import { toast } from 'react-toastify';
 import emailjs from 'emailjs-com';
 
 const Contact = ({ theme }) => {
@@ -28,7 +28,7 @@ const Contact = ({ theme }) => {
     handleSubmit = (e) => {
         e.preventDefault();
         if (!fname || !email || !mobile || !message) {
-            alert("Please fill the Required Field...!");
+            toast.error("Please fill the Required Field...!");
         } else {
             emailjs.send('service_q5sj8qq', 'template_122wjce', {
                 to_email: 'jayprakash199221@gmail.com', from_name: fname + mname + lname,
@@ -51,7 +51,7 @@ const Contact = ({ theme }) => {
         setCareerData({
             fname: "", mname: "", lname: "", email: "", mobile: "", address: "", message: ""
         });
-        alert("Input Fields Cleared Successfully...!");
+        toast.info("Input Fields Cleared Successfully...!");
     },
     
     ContactButtons = [{text:'Send',variant:'primary',type:'submit',className:'pro-btn btn-md pro-submit',onClick:handleSubmit},
@@ -65,7 +65,7 @@ const Contact = ({ theme }) => {
                 <Row>
                     <Col lg={2}></Col>
                     <Col>
-                        <Form className="mt-4">
+                        <form className="mt-4">
                             <Row>
                                 <Col lg={4} md={4} sm={12}>
                                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -101,7 +101,7 @@ const Contact = ({ theme }) => {
                                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput5">
                                         <Form.Label>Mobile Number</Form.Label>
                                         <Form.Control type="tel" className={`pro-input ${theme}`} placeholder="Enter Your Mobile Number"
-                                           onKeyDown={handleKeyPress} name="mobile" value={mobile} onChange={careersData} />
+                                           onKeyDown={handleKeyPress} maxLength={10} name="mobile" value={mobile} onChange={careersData} />
                                     </Form.Group>
                                 </Col>
                                 <Col lg={4} md={4} sm={12}>
@@ -123,7 +123,7 @@ const Contact = ({ theme }) => {
                                         className={button.className} onClick={button.onClick}>{button.text}</Button>
                                 )}
                             </div>
-                        </Form>
+                        </form>
                     </Col>
                     <Col lg={2}></Col>
                 </Row>

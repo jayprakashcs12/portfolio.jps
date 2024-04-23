@@ -4,10 +4,13 @@ import Education from './components/pages/Education';
 import Personal from './components/pages/Personal';
 import { Route, Routes } from 'react-router-dom';
 import Contact from './components/pages/Contact';
+import { ToastContainer } from 'react-toastify';
 import Footer from './components/common/Footer';
 import Header from './components/common/Header';
+import 'react-toastify/dist/ReactToastify.css';
 import About from './components/pages/About';
 import Home from './components/pages/Home';
+
 
 function App() {
 
@@ -15,6 +18,7 @@ function App() {
 
   return (
     <React.Fragment>
+      <ToastContainer position="top-center" autoClose={5000} className="pro-toast" />
       <Header theme={theme} setTheme={setTheme} />
       <Routes>
         <Route path="/" element={<Home theme={theme} />} />

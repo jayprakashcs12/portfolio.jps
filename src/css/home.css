@@ -33,3 +33,7 @@
 .pro-submit, .pro-submit:hover {
     background-color: #007ba7;
 }
+
+.pro-toast {
+    min-width: max-content;
+}
