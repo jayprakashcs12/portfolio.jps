@@ -14,12 +14,13 @@ const Footer = ({ theme }) => {
     ];
 
     let listItemStyle = { listStyleType: 'none', padding: 0 };
-    
+
     let linkStyle = (theme) => ({ color: theme === 'dark' ? 'white' : 'black', textDecoration: "none" });
 
     return (
 
         <div className={`pro-container footer ${theme}`}>
+            <hr className={`hr-footer ${theme}`} />
             <Container className='pro-conent'>
                 <Row>
                     <Col lg={4} md={6} sm={12} className='mt-4'>
