@@ -18,3 +18,12 @@
     text-align: justify;
     margin: 2% 0;
 }
+
+.foot-link {
+    text-decoration: none;
+    color: var(--button-text-color);
+}
+
+.foot-link.dark {
+    color: var(--button-text-color);
+}
