@@ -14,7 +14,7 @@ function App() {
   let [theme, setTheme] = useState('light');
 
   return (
-    <>
+    <React.Fragment>
       <Header theme={theme} setTheme={setTheme} />
       <Routes>
         <Route path="/" element={<Home theme={theme} />} />
@@ -25,7 +25,7 @@ function App() {
         <Route path="/about-us" element={<About theme={theme} />} />
       </Routes>
       <Footer theme={theme} />
-    </>
+    </React.Fragment>
   );
 }
 
