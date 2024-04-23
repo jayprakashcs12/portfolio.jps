@@ -14,19 +14,21 @@ import Home from './components/pages/Home';
 
 function App() {
 
-  let [theme, setTheme] = useState('light');
+  let [theme, setTheme] = useState('light'),
+
+  routesComponents = [
+    { path: '/', component: Home }, { path: '/personal-info', component: Personal }, { path: '/experience', component: Experience },
+    { path: '/education', component: Education }, { path: '/contact-us', component: Contact }, { path: '/about-us', component: About },
+  ];
 
   return (
     <React.Fragment>
       <ToastContainer position="top-center" autoClose={5000} className="pro-toast" />
       <Header theme={theme} setTheme={setTheme} />
       <Routes>
-        <Route path="/" element={<Home theme={theme} />} />
-        <Route path="/personal-info" element={<Personal theme={theme} />} />
-        <Route path="/experience" element={<Experience theme={theme} />} />
-        <Route path="/education" element={<Education theme={theme} />} />
-        <Route path="/contact-us" element={<Contact theme={theme} />} />
-        <Route path="/about-us" element={<About theme={theme} />} />
+        {routesComponents.map((route, i) => (
+          <Route key={i} path={route.path} element={<route.component theme={theme} />} />
+        ))}
       </Routes>
       <Footer theme={theme} />
     </React.Fragment>
