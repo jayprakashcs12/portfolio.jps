@@ -1,32 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { IoMoon, IoSunnyOutline } from 'react-icons/io5';
 import { NavLink } from "react-router-dom";
 
 const Header = ({ setTheme, theme }) => {
 
-    let darkToggle = () => { setTheme(theme === 'light' ? 'dark' : 'light'); },
+    let [expand, setExpand] = useState(false),
+    darkToggle = () => { setTheme(theme === 'light' ? 'dark' : 'light'); },
     activeNavStyle = { fontWeight: "bold" }, 
     navLinkClassName = `pro-button ${theme} links nav-links`, 
     navStyle = { fontWeight: "normal" },
-    navLinks = [
-        { navTo: '/', navText: 'Home' }, { navTo: '/about-us', navText: 'About Us' },
+    navLinks = [ { navTo: '/', navText: 'Home' }, { navTo: '/about-us', navText: 'About Us' },
         { navTo: '/experience', navText: 'Experience' }, { navTo: '/education', navText: 'Education' },
-        { navTo: '/personal-info', navText: 'Personal Info' }, { navTo: '/contact-us', navText: 'Contact' }, 
+        { navTo: '/personal-info', navText: 'Personal Info' }, { navTo: '/contact-us', navText: 'Contact Us' }, 
     ];
 
     return (
-        <Navbar expand="lg" collapseOnSelect className={`pro-navbar main-navbar ${theme}`} sticky="top">
-            <Container className="nav-content">
+        <Navbar expanded={expand} expand="lg" collapseOnSelect sticky="top" className={`pro-navbar main-navbar ${theme}`}>
+            <Container className="nav-content" onClick={e => e.stopPropagation()}>
                 <Navbar.Brand>
                     <h3 className={`pro-navbar ${theme}`}>Jay Prakash Singh</h3>
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => setExpand(!expand)} />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto"></Nav>
                     <Nav>
                         {navLinks.map((link, i) => (
-                            <NavLink key={i} to={link.navTo} style={isActive => isActive ? activeNavStyle : navStyle} className={navLinkClassName}>
+                            <NavLink key={i} to={link.navTo} style={isActive => isActive ? activeNavStyle : navStyle} className={navLinkClassName} 
+                                onClick={() => setExpand(false)}>
                                 {link.navText}
                             </NavLink>
                         ))}
@@ -36,6 +37,6 @@ const Header = ({ setTheme, theme }) => {
             </Container>
         </Navbar>
     );
-};
+}
 
 export default Header;
