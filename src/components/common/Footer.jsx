@@ -26,7 +26,7 @@ const Footer = ({ theme }) => {
                     <Col lg={4} md={6} sm={12} className='mt-4'>
                         <h3>Jay Prakash Singh</h3>
                         <p className='foot-text'>
-                            Hey, I am Jay Prakash Singh. I'm an energetic web developer with a sharp eye for ReactJS, endeavoring to make effective and
+                            I'm an energetic web developer with a sharp eye for ReactJS, endeavoring to make effective and
                             outwardly staggering programming arrangements with an IT foundation.
                         </p>
                         <ol style={listItemStyle}>
