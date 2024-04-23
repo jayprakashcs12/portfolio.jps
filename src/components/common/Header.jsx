@@ -5,13 +5,15 @@ import { NavLink } from "react-router-dom";
 
 const Header = ({ setTheme, theme }) => {
 
-    let handleToggle = () => { setTheme(theme === 'light' ? 'dark' : 'light'); }
-      
-    let activeNavLinkStyle = { fontWeight: "bold" };
-
-    let navLinkClassName = `pro-button ${theme} links nav-links`;
-
-    let navLinkStyle = { fontWeight: "normal" };
+    let darkToggle = () => { setTheme(theme === 'light' ? 'dark' : 'light'); },
+    activeNavStyle = { fontWeight: "bold" }, 
+    navLinkClassName = `pro-button ${theme} links nav-links`, 
+    navStyle = { fontWeight: "normal" },
+    navLinks = [
+        { navTo: '/', navText: 'Home' }, { navTo: '/about-us', navText: 'About Us' },
+        { navTo: '/experience', navText: 'Experience' }, { navTo: '/education', navText: 'Education' },
+        { navTo: '/personal-info', navText: 'Personal Info' }, { navTo: '/contact-us', navText: 'Contact' }, 
+    ];
 
     return (
         <Navbar expand="lg" collapseOnSelect className={`pro-navbar main-navbar ${theme}`} sticky="top">
@@ -23,13 +25,12 @@ const Header = ({ setTheme, theme }) => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto"></Nav>
                     <Nav>
-                        <NavLink to="/" style={isActive => isActive ? activeNavLinkStyle : navLinkStyle} className={navLinkClassName}>Home</NavLink>
-                        <NavLink to="/about-us" style={isActive => isActive ? activeNavLinkStyle : navLinkStyle} className={navLinkClassName}>About Us</NavLink>
-                        <NavLink to="/experience" style={isActive => isActive ? activeNavLinkStyle : navLinkStyle} className={navLinkClassName}>Experiece</NavLink>
-                        <NavLink to="/education" style={isActive => isActive ? activeNavLinkStyle : navLinkStyle} className={navLinkClassName}>Education</NavLink>
-                        <NavLink to="/contact-us" style={isActive => isActive ? activeNavLinkStyle : navLinkStyle} className={navLinkClassName}>Contact</NavLink>
-                        <NavLink to="/personal-info" style={isActive => isActive ? activeNavLinkStyle : navLinkStyle} className={navLinkClassName}>Persoal Info</NavLink>
-                        <Nav.Link className={`pro-button ${theme}`} onClick={handleToggle}>{theme === 'light' ? <IoMoon /> : <IoSunnyOutline />}</Nav.Link>
+                        {navLinks.map((link, i) => (
+                            <NavLink key={i} to={link.navTo} style={isActive => isActive ? activeNavStyle : navStyle} className={navLinkClassName}>
+                                {link.navText}
+                            </NavLink>
+                        ))}
+                        <Nav.Link className={`pro-button ${theme}`} onClick={darkToggle}>{theme === 'light' ? <IoMoon /> : <IoSunnyOutline />}</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

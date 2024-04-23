@@ -5,20 +5,13 @@ import { FiGithub, FiPhone } from "react-icons/fi";
 
 const Footer = ({ theme }) => {
 
-    let phoneNumber = '8563001092';
-    let personName = 'Jay Prakash Singh';
-    let phoneURL = `tel:${phoneNumber}`;
-    let whatsAppUrl = `https://wa.me/${phoneNumber}`;
-    let gitHubUrl = `https://github.com/jayprakashcs12`;
-
-    let contactItems = [
+    let phoneNumber = '8563001092', personName = 'Jay Prakash Singh', phoneURL = `tel:${phoneNumber}`, 
+    whatsAppUrl = `https://wa.me/${phoneNumber}`, gitHubUrl = `https://github.com/jayprakashcs12`,
+    listItemStyle = { listStyleType: 'none', padding: 0 },
+    contactItems = [
         { text: personName, url: gitHubUrl, icon: <FiGithub /> }, { text: phoneNumber, url: phoneURL, icon: <FiPhone /> },
         { text: phoneNumber, url: whatsAppUrl, icon: <BsWhatsapp /> }
     ];
-
-    let listItemStyle = { listStyleType: 'none', padding: 0 };
-
-    let linkStyle = (theme) => ({ color: theme === 'dark' ? '#ffffff' : '#6ca5c3', textDecoration: "none" });
 
     return (
 
