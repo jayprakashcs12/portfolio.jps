@@ -14,7 +14,7 @@ const Header = ({ setTheme, theme }) => {
     let navLinkStyle = { fontWeight: "normal" };
 
     return (
-        <Navbar expand="lg" className={`pro-navbar main-navbar ${theme}`} sticky="top">
+        <Navbar expand="lg" collapseOnSelect className={`pro-navbar main-navbar ${theme}`} sticky="top">
             <Container className="nav-content">
                 <Navbar.Brand>
                     <h3 className={`pro-navbar ${theme}`}>Jay Prakash Singh</h3>
