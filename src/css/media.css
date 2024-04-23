@@ -3,6 +3,10 @@
     .nav-content, .pro-conent {
         --bs-gutter-x: 1.5rem !important;
     }
+
+    .footer {
+        position: relative !important;
+    }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 991.9px) {

@@ -13,7 +13,7 @@ const Home = ({ theme }) => {
             <Container className='pro-conent'>
                 <h1>Home</h1>
                 <Row>
-                    <Col sm={12}>
+                    <Col md={6} sm={12}>
                         <p className="about-text">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum dignissimos vitae ex ipsa ratione
                             tempora voluptatem sit perspiciatis reprehenderit? Officia, excepturi vel accusamus ipsa
@@ -25,7 +25,7 @@ const Home = ({ theme }) => {
                             necessitatibus dolore quae reiciendis minima aspernatur.
                         </p>
                     </Col>
-                    <Col sm={12}>
+                    <Col md={6} sm={12}>
                         <p className="about-text">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum dignissimos vitae ex ipsa ratione
                             tempora voluptatem sit perspiciatis reprehenderit? Officia, excepturi vel accusamus ipsa

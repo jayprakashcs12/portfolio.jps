@@ -10,7 +10,6 @@ const Education = ({ theme }) => {
     return (
 
         <div className={`pro-container ${theme}`}>
-            {/* --bs-gutter-x:"0" */}
             <Container className='pro-conent'>
                 <h1>Education</h1>
             </Container>

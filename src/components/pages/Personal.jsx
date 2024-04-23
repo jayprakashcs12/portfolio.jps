@@ -10,7 +10,6 @@ const Personal = ({ theme }) => {
     return (
 
         <div className={`pro-container ${theme}`}>
-            {/* --bs-gutter-x:"0" */}
             <Container className='pro-conent'>
                 <h1>Personal Info</h1>
             </Container>
