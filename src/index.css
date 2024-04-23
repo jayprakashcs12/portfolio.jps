@@ -13,9 +13,11 @@
 .light {
   --button-bg-color: #bae7f5;
   --button-text-color: #333;
+  --button-text-color1: #fff;
 }
 
 .dark {
   --button-bg-color: #333;
   --button-text-color: #fff;
+  --button-text-color1: #333;
 }
