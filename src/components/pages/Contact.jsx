@@ -15,6 +15,15 @@ const Contact = ({ theme }) => {
 
     { fname, mname, lname, email, mobile, address, message } = careerData,
 
+    contactNames = [
+        { label: "First Name", type: "text", placeholder: "Enter Your First Name", name: "fname" },
+        { label: "Middle Name", type: "text", placeholder: "Enter Your Middle Name", name: "mname" },
+        { label: "Last Name", type: "text", placeholder: "Enter Your Last Name", name: "lname" },
+        { label: "Email ID", type: "email", placeholder: "Enter Your Email ID", name: "email" },
+        { label: "Mobile Number", type: "tel", placeholder: "Enter Your Mobile Number", name: "mobile", maxLength: 10 },
+        { label: "Location", type: "text", placeholder: "Enter Your Location", name: "address" }
+    ],
+
     careersData = (e) => {
         let { name, value } = e.target;
         setCareerData({ ...careerData, [name]: value });
@@ -45,7 +54,6 @@ const Contact = ({ theme }) => {
             });
         }
     },
-    
 
     handleClear = (e) => {
         setCareerData({
@@ -53,77 +61,45 @@ const Contact = ({ theme }) => {
         });
         toast.info("Input Fields Cleared Successfully...!");
     },
-    
-    ContactButtons = [{text:'Send',variant:'primary',type:'submit',className:'pro-btn btn-md pro-submit',onClick:handleSubmit},
-    {text:'Clear',variant:'primary',type:'reset',className:'pro-btn btn-md pro-reset',onClick:handleClear}];
+
+    ContactButtons = [{ text: 'Send', variant: 'primary', type: 'submit', className: 'pro-btn btn-md pro-submit', onClick: handleSubmit },
+    { text: 'Clear', variant: 'primary', type: 'reset', className: 'pro-btn btn-md pro-reset', onClick: handleClear }
+    ];
 
     return (
 
         <div className={`pro-container ${theme}`}>
             <Container className='pro-conent'>
-                <h1 style={{ textAlign: "center", marginBottom:"0" }}>Contact Us</h1>
+                <h1 style={{ textAlign: "center", marginBottom: "0" }}>Contact Us</h1>
                 <Row>
                     <Col lg={2}></Col>
                     <Col>
-                        <form className="mt-4">
+                        <Form className="mt-4">
                             <Row>
-                                <Col lg={4} md={4} sm={12}>
-                                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                                        <Form.Label>First Name</Form.Label>
-                                        <Form.Control type="text" className={`pro-input ${theme}`} placeholder="Enter Your First Name"
-                                            name="fname" value={fname} onChange={careersData} />
-                                    </Form.Group>
-                                </Col>
-                                <Col lg={4} md={4} sm={12}>
-                                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput2">
-                                        <Form.Label>Middle Name</Form.Label>
-                                        <Form.Control type="text" className={`pro-input ${theme}`} placeholder="Enter Your Middle Name" 
-                                            name="mname" value={mname} onChange={careersData} />
-                                    </Form.Group>
-                                </Col>
-                                <Col lg={4} md={4} sm={12}>
-                                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput3">
-                                        <Form.Label>Last Name</Form.Label>
-                                        <Form.Control type="text" className={`pro-input ${theme}`} placeholder="Enter Your Last Name"
-                                            name="lname" value={lname} onChange={careersData} />
-                                    </Form.Group>
-                                </Col>
+                                {contactNames.map((field, i) => (
+                                    <Col lg={4} md={4} sm={12} key={i}>
+                                        <Form.Group className="mb-2" controlId={`exampleForm.ControlInput${i + 1}`}>
+                                            <Form.Label>{field.label}</Form.Label>
+                                            <Form.Control type={field.type} className={`pro-input ${theme}`} 
+                                                placeholder={field.placeholder} name={field.name} value={field.value} 
+                                                onChange={careersData} onKeyDown={field.type === 'tel' ? handleKeyPress : null} 
+                                                maxLength={field.maxLength} />
+                                        </Form.Group>
+                                    </Col>
+                                ))}
                             </Row>
-                            <Row>
-                                <Col lg={4} md={4} sm={12}>
-                                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput4">
-                                        <Form.Label>Email ID</Form.Label>
-                                        <Form.Control type="text" className={`pro-input ${theme}`} placeholder="Enter Your Email ID"
-                                            name="email" value={email} onChange={careersData} />
-                                    </Form.Group>
-                                </Col>
-                                <Col lg={4} md={4} sm={12}>
-                                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput5">
-                                        <Form.Label>Mobile Number</Form.Label>
-                                        <Form.Control type="tel" className={`pro-input ${theme}`} placeholder="Enter Your Mobile Number"
-                                           onKeyDown={handleKeyPress} maxLength={10} name="mobile" value={mobile} onChange={careersData} />
-                                    </Form.Group>
-                                </Col>
-                                <Col lg={4} md={4} sm={12}>
-                                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput6">
-                                        <Form.Label>Location</Form.Label>
-                                        <Form.Control type="text" className={`pro-input ${theme}`} placeholder="Enter Your Location"
-                                            name="address" value={address} onChange={careersData} />
-                                    </Form.Group>
-                                </Col>
-                            </Row>
-                            <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                            <Form.Group className="mb-2" controlId="exampleForm.ControlTextarea1">
                                 <Form.Label>Message</Form.Label>
                                 <Form.Control as="textarea" rows={3} className={`pro-input ${theme}`} placeholder="Enter Your Message Here"
                                     name="message" value={message} onChange={careersData} />
                             </Form.Group>
                             <div className="btn-row">
-                                {ContactButtons.map((button, i) => 
-                                    <Button key={i} variant={button.variant} type={button.type} 
+                                {ContactButtons.map((button, i) =>
+                                    <Button key={i} variant={button.variant} type={button.type}
                                         className={button.className} onClick={button.onClick}>{button.text}</Button>
                                 )}
                             </div>
-                        </form>
+                        </Form>
                     </Col>
                     <Col lg={2}></Col>
                 </Row>
