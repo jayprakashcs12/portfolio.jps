@@ -7,7 +7,6 @@ const Header = ({ setTheme, theme }) => {
 
     let [expand, setExpand] = useState(false),
     darkToggle = () => { setTheme(theme === 'light' ? 'dark' : 'light'); },
-    activeNavStyle = { fontWeight: "bold" }, 
     navLinkClassName = `pro-button ${theme} links nav-links`, 
     navStyle = { fontWeight: "normal" },
     navLinks = [ { navTo: '/', navText: 'Home' }, { navTo: '/about-us', navText: 'About Us' },
@@ -26,7 +25,7 @@ const Header = ({ setTheme, theme }) => {
                     <Nav className="me-auto"></Nav>
                     <Nav>
                         {navLinks.map((link, i) => (
-                            <NavLink key={i} to={link.navTo} style={isActive => isActive ? activeNavStyle : navStyle} className={navLinkClassName} 
+                            <NavLink key={i} to={link.navTo} style={navStyle} className={navLinkClassName} 
                                 onClick={() => setExpand(false)}>
                                 {link.navText}
                             </NavLink>
