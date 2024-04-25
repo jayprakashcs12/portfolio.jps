@@ -16,7 +16,7 @@ const Home = ({ theme }) => {
     return (
         <div className={`pro-container ${theme}`}>
             <Container className='pro-content'>
-                <Row className='pt-4 pb-4'>
+                <Row className='pro-row'>
                     <Col md={6} sm={12}>
                         <h1>{BioData.fullName}</h1>
                         <p style={typoStyle}> I am a

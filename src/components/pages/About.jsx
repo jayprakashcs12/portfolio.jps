@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Container } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 
 const About = ({ theme }) => {
 
@@ -11,7 +11,9 @@ const About = ({ theme }) => {
         
         <div className={`pro-container ${theme}`}>
             <Container className='pro-content'>
-                <h1>About</h1>
+                <Row className='pro-row'>
+                    <h1>About Us</h1>
+                </Row>
             </Container>
         </div>
     )

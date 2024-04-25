@@ -1,7 +1,5 @@
 .pro-content {
     --bs-gutter-x: 0;
-    padding-bottom: 2%;
-    padding-top: 2%;
 }
 
 .about-text {
@@ -89,7 +87,14 @@
 }
 
 .img-div {
-    display: flex;
     justify-content: end;
+}
+
+.img-div, .pro-row {
+    display: flex;
     align-items: center;
+}
+
+.pro-row {
+    padding: 1% 0;
 }

@@ -70,8 +70,8 @@ const Contact = ({ theme }) => {
 
         <div className={`pro-container ${theme}`}>
             <Container className='pro-content'>
-                <h1 style={{ textAlign: "center", marginBottom: "0" }}>Contact Us</h1>
-                <Row>
+                <Row className="pro-row">
+                    <h1 style={{ textAlign: "center", marginBottom: "0" }}>Contact Us</h1>
                     <Col lg={2}></Col>
                     <Col>
                         <Form className="mt-4">
