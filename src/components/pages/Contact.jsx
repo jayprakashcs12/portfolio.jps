@@ -69,7 +69,7 @@ const Contact = ({ theme }) => {
     return (
 
         <div className={`pro-container ${theme}`}>
-            <Container className='pro-conent'>
+            <Container className='pro-content'>
                 <h1 style={{ textAlign: "center", marginBottom: "0" }}>Contact Us</h1>
                 <Row>
                     <Col lg={2}></Col>

@@ -2,6 +2,12 @@
     width: 100%;
 }
 
+.foot-content {
+    --bs-gutter-x: 0;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
 .hr-footer, .hr-footer.dark {
     margin: 0;
 }

@@ -10,7 +10,7 @@ const About = ({ theme }) => {
     return (
         
         <div className={`pro-container ${theme}`}>
-            <Container className='pro-conent'>
+            <Container className='pro-content'>
                 <h1>About</h1>
             </Container>
         </div>

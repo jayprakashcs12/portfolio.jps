@@ -10,7 +10,7 @@ const Personal = ({ theme }) => {
     return (
 
         <div className={`pro-container ${theme}`}>
-            <Container className='pro-conent'>
+            <Container className='pro-content'>
                 <h1>Personal Info</h1>
             </Container>
         </div>

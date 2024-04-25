@@ -32,9 +32,9 @@ const Footer = ({ theme }) => {
 
         <div className={`pro-container footer ${theme}`}>
             <hr className={`hr-footer ${theme}`} />
-            <Container className='pro-conent'>
+            <Container className='foot-content'>
                 <Row>
-                    <Col lg={4} md={6} sm={12} className='mt-4'>
+                    <Col lg={4} md={6} sm={12} className='mb-2 mt-2'>
                         <h3>About Me</h3>
                         <p className='foot-text'>
                             I'm an energetic web developer with a sharp eye for ReactJS, endeavoring to make effective and
@@ -51,9 +51,9 @@ const Footer = ({ theme }) => {
                         </ol>
                     </Col>
                     {[...Array(2)].map((_, i) => (
-                        <Col lg={4} md={6} sm={12} className='mt-4' key={i}>
+                        <Col lg={4} md={6} sm={12} className='mb-2 mt-2' key={i}>
                             <h3>Social Links</h3>
-                            <ol style={ mainListStyle }>
+                            <ol style={mainListStyle}>
                                 {socialLinks.slice(i * 3, i * 3 + 3).map((link, j) => (
                                     <li key={j} style={listStyle}>
                                         <a href={link.url} target="_blank" className={`foot-link ${theme}`} style={anchorStyle}>

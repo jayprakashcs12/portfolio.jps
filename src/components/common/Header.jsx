@@ -18,7 +18,7 @@ const Header = ({ setTheme, theme }) => {
         <Navbar expanded={expand} expand="lg" collapseOnSelect sticky="top" className={`pro-navbar main-navbar ${theme}`}>
             <Container className="nav-content" onClick={e => e.stopPropagation()}>
                 <Navbar.Brand>
-                    <h3 className={`pro-navbar ${theme}`}>Jay Prakash Singh</h3>
+                    <h3 className={`pro-navbar ${theme}`}>Portfolio</h3>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => setExpand(!expand)} />
                 <Navbar.Collapse id="responsive-navbar-nav">
