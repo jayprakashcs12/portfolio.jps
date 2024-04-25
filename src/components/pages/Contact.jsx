@@ -36,7 +36,7 @@ const Contact = ({ theme }) => {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        if (!fname || !email || !mobile || !message) {
+        if (!fname || !email || !mobile || !address || !message) {
             toast.error("Please fill the Required Field...!");
         } else {
             emailjs.send('service_q5sj8qq', 'template_122wjce', {
