@@ -6,10 +6,8 @@ import { NavLink } from "react-router-dom";
 
 const Header = ({ setTheme, theme }) => {
 
-    let [expand, setExpand] = useState(false),
-    darkToggle = () => { setTheme(theme === 'light' ? 'dark' : 'light'); },
-    navLinkClassName = `pro-button ${theme} links nav-links`, 
-    navStyle = { fontWeight: "normal" };
+    let [expand, setExpand] = useState(false), darkToggle = () => { setTheme(theme === 'light' ? 'dark' : 'light'); },
+    navLinkClassName = `pro-button ${theme} links nav-links`, navStyle = { fontWeight: "normal" };
 
     return (
         <Navbar expanded={expand} expand="lg" collapseOnSelect sticky="top" className={`pro-navbar main-navbar ${theme}`}>

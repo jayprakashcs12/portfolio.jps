@@ -1,27 +1,14 @@
 import React, { useState } from 'react';
-import Experience from './components/pages/Experience';
-import Education from './components/pages/Education';
-import Personal from './components/pages/Personal';
 import { Route, Routes } from 'react-router-dom';
-import Contact from './components/pages/Contact';
 import { ToastContainer } from 'react-toastify';
 import Footer from './components/common/Footer';
 import Header from './components/common/Header';
-import Skills from './components/pages/Skills';
+import { routesComponents } from "./data/Info";
 import 'react-toastify/dist/ReactToastify.css';
-import About from './components/pages/About';
-import Home from './components/pages/Home';
-
 
 function App() {
 
-  let [theme, setTheme] = useState('light'),
-
-  routesComponents = [
-    { path: '/', component: Home }, { path: '/personal-info', component: Personal }, { path: '/experience', component: Experience },
-    { path: '/education', component: Education }, { path: '/contact-us', component: Contact }, { path: '/about-us', component: About },
-    { path: '/skills', component: Skills },
-  ];
+  let [theme, setTheme] = useState('light');
 
   return (
     <React.Fragment>

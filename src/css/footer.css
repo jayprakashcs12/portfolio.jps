@@ -20,6 +20,11 @@
     box-shadow: rgba(255, 255, 255, 0.5) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
+.pro-foot {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
 .foot-text {
     text-align: justify;
 }
