@@ -11,7 +11,7 @@ import { BsStackOverflow, BsWhatsapp } from "react-icons/bs";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { BiLogoGmail } from "react-icons/bi";
 
-let iconFontSize = { fontSize: "20px" }, phoneNumber = '8563001092', personName = 'Mail Me', phoneURL = `tel:${phoneNumber}`,
+export let iconFontSize = { fontSize: "20px" }, phoneNumber = '8563001092', personName = 'Mail Me', phoneURL = `tel:${phoneNumber}`,
 whatsAppUrl = `https://wa.me/${phoneNumber}`, mailID = 'jayprakash199221@gmail.com', mailUrl = `mailto:${mailID}`;
 
 export let ContactItems = [
@@ -22,7 +22,7 @@ export let ContactItems = [
 
 export let BioData = {
   fullName: "Jay Prakash Singh",
-  roles: ["(Front End Developer)", "ReactJS Developer", "UI Developer"],
+  roles: ["(Front End Developer)", "(ReactJS Developer)", "(UI Developer)"],
   github: "https://github.com/jayprakashcs12/",
   resume: "https://drive.google.com/file/d/19ZKBcu6kLepC_wYcGTMEJculz_3zjFrx/view?usp=sharing",
   description:
