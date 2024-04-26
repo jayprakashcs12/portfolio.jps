@@ -12,7 +12,7 @@ const Personal = ({ theme }) => {
         <div className={`pro-container ${theme}`}>
             <Container className='pro-content'>
                 <Row className='pro-row'>
-                    <h1>Personal Info</h1>
+                    <h1 className='pro-head'>Personal Info</h1>
                 </Row>
             </Container>
         </div>

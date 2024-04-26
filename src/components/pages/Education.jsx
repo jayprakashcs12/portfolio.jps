@@ -12,7 +12,7 @@ const Education = ({ theme }) => {
         <div className={`pro-container ${theme}`}>
             <Container className='pro-content'>
                 <Row className='pro-row'>
-                    <h1>Education</h1>
+                    <h1 className='pro-head'>Education</h1>
                 </Row>
             </Container>
         </div>

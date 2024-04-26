@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import { Container, Row } from 'react-bootstrap';
 
-const Experience = ({ theme }) => {
+const Skills = ({ theme }) => {
 
     useEffect(() => {
-        document.title = "Experience | Jay Prakash Singh";
+        document.title = "Skills | Jay Prakash Singh";
     }, [])
 
     return (
@@ -12,7 +12,7 @@ const Experience = ({ theme }) => {
         <div className={`pro-container ${theme}`}>
             <Container className='pro-content'>
                 <Row className='pro-row'>
-                    <h1 className='pro-head'>Experience</h1>
+                    <h1 className='pro-head'>Skills</h1>
                 </Row>
             </Container>
         </div>
@@ -20,4 +20,4 @@ const Experience = ({ theme }) => {
 
 }
 
-export default Experience;
+export default Skills;

@@ -7,6 +7,7 @@ import Contact from './components/pages/Contact';
 import { ToastContainer } from 'react-toastify';
 import Footer from './components/common/Footer';
 import Header from './components/common/Header';
+import Skills from './components/pages/Skills';
 import 'react-toastify/dist/ReactToastify.css';
 import About from './components/pages/About';
 import Home from './components/pages/Home';
@@ -19,6 +20,7 @@ function App() {
   routesComponents = [
     { path: '/', component: Home }, { path: '/personal-info', component: Personal }, { path: '/experience', component: Experience },
     { path: '/education', component: Education }, { path: '/contact-us', component: Contact }, { path: '/about-us', component: About },
+    { path: '/skills', component: Skills },
   ];
 
   return (

@@ -23,7 +23,7 @@ export let JobSummary = {
   ]
 }
 
-export let NavRoutes = [ { navTo: '/', navText: 'Home' }, { navTo: '/about-us', navText: 'About Us' },
+export let NavRoutes = [ { navTo: '/', navText: 'Home' }, { navTo: '/about-us', navText: 'About Us' }, { navTo: '/skills', navText: 'Skills' },
   { navTo: '/experience', navText: 'Experience' }, { navTo: '/education', navText: 'Education' },
   { navTo: '/personal-info', navText: 'Personal Info' }, { navTo: '/contact-us', navText: 'Contact Us' }, 
 ];
