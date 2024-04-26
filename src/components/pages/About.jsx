@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
-import { Container, Row } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
+import { JobSummary } from "../../data/Info";
 
 const About = ({ theme }) => {
 
@@ -10,10 +11,13 @@ const About = ({ theme }) => {
     return (
         
         <div className={`pro-container ${theme}`}>
-            <Container className='pro-content'>
-                <Row className='pro-row'>
-                    <h1>About Us</h1>
-                </Row>
+            <Container className="pro-content pages-content">
+                <h1 className='pro-head'>{JobSummary.title}</h1>
+                <ul style={{paddingLeft:"1rem"}}>
+                    {JobSummary.description.map((item, i) => (
+                        <li style={{paddingBottom:"5px"}} key={i}>{item + "."}</li>
+                    ))}
+                </ul>
             </Container>
         </div>
     )

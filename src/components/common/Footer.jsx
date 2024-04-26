@@ -43,7 +43,7 @@ const Footer = ({ theme }) => {
                         <ol style={mainListStyle}>
                             {contactItems.map((item, i) => (
                                 <li key={i} style={listStyle}>
-                                    <a href={item.url} target="_blank" className={`foot-link ${theme}`} style={anchorStyle}>
+                                    <a href={item.url} target="_blank" rel="noreferrer noopener" className={`foot-link ${theme}`} style={anchorStyle}>
                                         {item.icon} &nbsp; {phoneNumber === item.text && '+91-'} {item.text}
                                     </a>
                                 </li>
@@ -56,7 +56,7 @@ const Footer = ({ theme }) => {
                             <ol style={mainListStyle}>
                                 {socialLinks.slice(i * 3, i * 3 + 3).map((link, j) => (
                                     <li key={j} style={listStyle}>
-                                        <a href={link.url} target="_blank" className={`foot-link ${theme}`} style={anchorStyle}>
+                                        <a href={link.url} target="_blank" rel="noreferrer noopener" className={`foot-link ${theme}`} style={anchorStyle}>
                                             {link.icon} &nbsp; {link.name}
                                         </a>
                                     </li>

@@ -4,8 +4,8 @@
 
 .foot-content {
     --bs-gutter-x: 0;
-    padding-bottom: 1%;
-    padding-top: 1%;
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
 }
 
 .hr-footer, .hr-footer.dark {
@@ -22,7 +22,6 @@
 
 .foot-text {
     text-align: justify;
-    margin: 2% 0;
 }
 
 .foot-link {

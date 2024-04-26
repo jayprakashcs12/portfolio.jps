@@ -3,8 +3,35 @@
     .foot-content, .nav-content, .pro-content {
         --bs-gutter-x: 2.5rem !important;
     }
+
+    .typo-text {
+        font-size: 20px !important;
+    }
 }
 
+@media only screen and (min-width: 320px) and (max-width: 767.9px) {
+
+    .pro-row {
+        flex-direction: column-reverse !important;
+    }
+
+    .pro-head {
+        font-size: 1.5rem !important;
+    }
+
+    .img-div {
+        justify-content: center !important;
+    }
+
+    .pro-img {
+        margin-bottom: .5rem !important;
+    }
+
+    .btn-down {
+        max-width: 245px !important;
+    }
+
+}
 @media only screen and (min-width: 320px) and (max-width: 991.9px) {
     
     .nav-links {
@@ -16,7 +43,7 @@
         text-align: center !important;
     }
 
-    .foot-text {
+    .pro-data, .foot-text {
         text-align: left !important;
     }
 }
