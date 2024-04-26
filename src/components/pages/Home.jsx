@@ -18,7 +18,7 @@ const Home = ({ theme }) => {
                 <Row className='pro-row'>
                     <Col md={6} sm={12}>
                         <h1 className='pro-head'>{BioData.fullName}</h1>
-                        <p className="typo-text" style={typoStyle}> I am a
+                        <p className="typo-text" style={typoStyle}>
                             <ReactTyped className="text-blue-700 font-bold" strings={BioData.roles} typeSpeed={40} backSpeed={50} loop={true} />
                         </p>
                         <p className='pro-data'>{BioData.description + "."}</p>

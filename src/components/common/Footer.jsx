@@ -1,9 +1,5 @@
 import React from 'react';
 import { Col, Container, Row } from "react-bootstrap";
-import { FaCodepen, FaInstagram, FaXTwitter } from "react-icons/fa6";
-import { BsStackOverflow, BsWhatsapp } from "react-icons/bs";
-import { FiGithub, FiPhone } from "react-icons/fi";
-import { RiFacebookLine, RiLinkedinLine } from "react-icons/ri";
 import { ContactItems, SocialLinks } from "../../data/Info";
 
 const Footer = ({ theme }) => {
@@ -37,7 +33,7 @@ const Footer = ({ theme }) => {
                         <Col lg={4} md={6} sm={12} className='mb-2 mt-2' key={i}>
                             <h3 className='pro-foot'>Social Links</h3>
                             <ol style={mainListStyle}>
-                                {SocialLinks.slice(i * 3, i * 3 + 3).map((link, j) => (
+                                {SocialLinks.slice(i * 4, i * 4 + 4).map((link, j) => (
                                     <li key={j} style={listStyle}>
                                         <a href={link.url} target="_blank" rel="noreferrer noopener" className={`foot-link ${theme}`} style={anchorStyle}>
                                             {link.icon} &nbsp; {link.name}
