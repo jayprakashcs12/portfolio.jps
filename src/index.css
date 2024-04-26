@@ -21,3 +21,20 @@
   --button-text-color: #fff;
   --button-text-color1: #333;
 }
+
+.social-icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.foot-link:hover {
+  font-weight: 600 !important;
+}
+
+.foot-link:hover {
+  color: #0d6efd !important;
+}
+
+.foot-link.dark:hover {
+  color: #082148 !important;
+}

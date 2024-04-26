@@ -1,10 +1,10 @@
 import React from 'react';
 import { Col, Container, Row } from "react-bootstrap";
-import { ContactItems, SocialLinks } from "../../data/Info";
+import { ContactItems, phoneNumber, SocialLinks } from "../../data/Info";
 
 const Footer = ({ theme }) => {
 
-    let mainListStyle = { listStyleType: 'none', margin: 0, padding: 0 }, phoneNumber = '8563001092',
+    let mainListStyle = { listStyleType: 'none', margin: 0, padding: 0 },
     anchorStyle = { display: "flex", alignItems: "center" }, listStyle = { marginTop: "2%" };
 
     return (
@@ -23,7 +23,7 @@ const Footer = ({ theme }) => {
                             {ContactItems.map((item, i) => (
                                 <li key={i} style={listStyle}>
                                     <a href={item.url} target="_blank" rel="noreferrer noopener" className={`foot-link ${theme}`} style={anchorStyle}>
-                                        {item.icon} &nbsp; {phoneNumber === item.text && '+91-'} {item.text}
+                                        {item.icon} {phoneNumber === item.text && '+91-'} {item.text}
                                     </a>
                                 </li>
                             ))}
@@ -36,7 +36,7 @@ const Footer = ({ theme }) => {
                                 {SocialLinks.slice(i * 4, i * 4 + 4).map((link, j) => (
                                     <li key={j} style={listStyle}>
                                         <a href={link.url} target="_blank" rel="noreferrer noopener" className={`foot-link ${theme}`} style={anchorStyle}>
-                                            {link.icon} &nbsp; {link.name}
+                                            {link.icon} {link.name}
                                         </a>
                                     </li>
                                 ))}

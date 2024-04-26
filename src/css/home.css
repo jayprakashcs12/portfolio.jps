@@ -64,49 +64,49 @@
 
 .pro-img {
     position: relative;
-    width: 100%;
-    height: 100%;
-    max-width: 290px;
-    max-height: 320px;
     border-radius: 20%;
+    max-height: 320px;
+    max-width: 290px;
+    height: 100%;
+    width: 100%;
 }
 
 
 .btn-down {
-    margin: 4% 0;
-    padding: 15px 45px;
-    text-align: center;
-    transition: .5s;
-    width: 95%;
-    max-width: 300px;
     background-size: 100% auto;
     text-transform: uppercase;
     border-radius: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    max-width: 300px;
+    transition: .5s;
     display: block;
     color: #fff;
     border: none;
+    margin: 4% 0;
+    width: 95%;
 }
 
 .resume-btn {
-    background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%);
+    background-image: linear-gradient(45deg,#00d2ff,#3a7bd5);
 }
 
 .resume-btn:hover {
-    background-position: right;
+    background-image: linear-gradient(45deg,#3a7bd5,#00d2ff);
 }
 
 .dark.resume-btn {
-    background-image: linear-gradient(135deg, rgba(133, 76, 230, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(45deg,#684ce6,#12b1d4);
 }
 
 .dark.resume-btn:hover {
-    background-position: right;
+    background-image: linear-gradient(45deg,#12b1d4,#684ce6);
 }
 
 .typo-text {
     margin-bottom: 0.5rem;
-    font-size: 25px;
     font-weight: 600;
+    font-size: 25px;
     display: flex;
     gap: 10px; 
 }
