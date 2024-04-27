@@ -11,12 +11,15 @@ import { BsStackOverflow, BsWhatsapp } from "react-icons/bs";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { BiLogoGmail } from "react-icons/bi";
 
-export let phoneNumber = '8563001092', personName = 'Mail Me', phoneURL = `tel:${phoneNumber}`,
-whatsAppUrl = `https://wa.me/${phoneNumber}`, mailID = 'jayprakash199221@gmail.com', mailUrl = `mailto:${mailID}`;
 
-export let ContactItems = [
-  { text: personName, url: mailUrl, icon: <BiLogoGmail className="social-icon" /> }, { text: phoneNumber, url: phoneURL, icon: <FiPhone className="social-icon" /> },
-  { text: phoneNumber, url: whatsAppUrl, icon: <BsWhatsapp className="social-icon" /> }
+export let Contacts = { 
+  phoneNumber: "8563001092", personName: 'Mail Me', phoneURL: "tel:8563001092", whatsAppUrl: "https://wa.me/8563001092", mailUrl: "mailto:jayprakash199221@gmail.com",
+};
+
+export let ContactsItem = [
+  { text: Contacts.personName, url: Contacts.mailUrl, icon: <BiLogoGmail className="social-icon" /> }, 
+  { text: Contacts.phoneNumber, url: Contacts.phoneURL, icon: <FiPhone className="social-icon" /> },
+  { text: Contacts.phoneNumber, url: Contacts.whatsAppUrl, icon: <BsWhatsapp className="social-icon" /> }
 ];
 
 export let BioData = {

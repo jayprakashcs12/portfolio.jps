@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from "react-bootstrap";
-import { ContactItems, phoneNumber, SocialLinks } from "../../data/Info";
+import { ContactsItem, Contacts, SocialLinks } from "../../data/Info";
 
 const Footer = ({ theme }) => {
 
@@ -20,10 +20,10 @@ const Footer = ({ theme }) => {
                             outwardly staggering programming arrangements with an IT foundation.
                         </p>
                         <ol style={mainListStyle}>
-                            {ContactItems.map((item, i) => (
+                            {ContactsItem.map((item, i) => (
                                 <li key={i} style={listStyle}>
                                     <a href={item.url} target="_blank" rel="noreferrer noopener" className={`foot-link ${theme}`} style={anchorStyle}>
-                                        {item.icon} {phoneNumber === item.text && '+91-'} {item.text}
+                                        {item.icon} {Contacts.phoneNumber === item.text && '+91-'} {item.text}
                                     </a>
                                 </li>
                             ))}
