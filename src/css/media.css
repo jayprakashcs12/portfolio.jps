@@ -28,7 +28,7 @@
     }
 
     .btn-down {
-        max-width: 245px !important;
+        width: 100% !important;
     }
 
 }
