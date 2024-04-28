@@ -71,10 +71,10 @@ const Contact = ({ theme }) => {
         <div className={`pro-container ${theme}`}>
             <Container className='pro-content'>
                 <Row className="pro-row">
-                    <h1 style={{ textAlign: "center", marginBottom: "0" }}>Contact Us</h1>
+                    <h1 className='pro-head skill-head'>Contact Us</h1>
                     <Col lg={2}></Col>
                     <Col>
-                        <Form className="mt-4">
+                        <Form className="mt-3">
                             <Row>
                                 {contactNames.map((field, i) => (
                                     <Col lg={4} md={4} sm={12} key={i}>

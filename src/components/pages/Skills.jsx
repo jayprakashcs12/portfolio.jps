@@ -11,19 +11,25 @@ const Skills = ({ theme }) => {
         <div className={`pro-container ${theme}`}>
             <Container className='pro-content'>
                 <Row className='pro-row'>
-                    <h1 className='pro-head'>Technical Skills</h1>
-                    {TechnicalSkills.map((skill, i) => (
-                        <Col key={i} lg={4} className="mb-2 mt-2">
-                            <Card>
-                                <Card.Header as="h4" className={`card-header ${theme}`}>{skill.category}</Card.Header>
-                                <ListGroup variant="flush">
-                                    {skill.items.map((item, idx) => (
-                                        <ListGroup.Item key={idx} className={`pro-list ${theme}`}>{item}</ListGroup.Item>
-                                    ))}
-                                </ListGroup>
-                            </Card>
-                        </Col>
-                    ))}
+                    <h1 className='pro-head skill-head'>Technical Skills</h1>
+                    <Col lg={2}></Col>
+                    <Col>
+                        <Row className="mt-3">
+                            {TechnicalSkills.map((skill, i) => (
+                                <Col key={i} lg={4} className="mb-2 mt-2">
+                                    <Card>
+                                        <Card.Header as="h4" className={`card-header ${theme}`}>{skill.category}</Card.Header>
+                                        <ListGroup variant="flush">
+                                            {skill.items.map((item, idx) => (
+                                                <ListGroup.Item key={idx} className={`pro-list ${theme}`}>{item}</ListGroup.Item>
+                                            ))}
+                                        </ListGroup>
+                                    </Card>
+                                </Col>
+                            ))}
+                        </Row>
+                    </Col>
+                    <Col lg={2}></Col>
                 </Row>
             </Container>
         </div>
