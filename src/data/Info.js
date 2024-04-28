@@ -74,3 +74,27 @@ export let TechnicalSkills = [
   { category: 'Scripting Language', items: ['JavaScript'], },
   { category: 'Library', items: ['ReactJS'], },
 ];
+
+export let WorkExperience = [
+  {
+    id: 1,
+    company: "Lobotus Technology",
+    position: "UI Developer",
+    date: "Jan-2021 - Dec-2023",
+    description: ["Creative Direction", "User Experience", "Visual Design", "Project Management", "Team Leading"]
+  },
+  {
+    id: 2,
+    company: "Bangalore Softsell Pvt Ltd",
+    position: "Junior Software Developer",
+    date: "Oct-2019 - Mar-2021",
+    description: ["Creative Direction", "User Experience", "Visual Design", "SEO", "Online Marketing"]
+  },
+  {
+    id: 3,
+    company: "Cybotrix Technology",
+    position: "Web Developer",
+    date: "Sept-2017 - Oct-2019",
+    description: ["User Experience", "Visual Design"]
+  }
+]; 
