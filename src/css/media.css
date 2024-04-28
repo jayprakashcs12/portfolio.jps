@@ -11,7 +11,7 @@
 
 @media only screen and (min-width: 320px) and (max-width: 767.9px) {
 
-    .pro-row {
+    .home-row {
         flex-direction: column-reverse !important;
     }
 
@@ -32,6 +32,7 @@
     }
 
 }
+
 @media only screen and (min-width: 320px) and (max-width: 991.9px) {
     
     .nav-links {
@@ -52,6 +53,10 @@
 
     .nav-links {
         text-transform:initial !important;
+    }
+
+    .card-header {
+        font-size: 18px;
     }
 
 }
