@@ -65,3 +65,12 @@ export let SocialLinks = [
   { name: 'Twitter', icon: <FaXTwitter className="social-icon" />, url: 'https://twitter.com/jayprakash2108/' },
   { name: 'Stack Overflow', icon: <BsStackOverflow className="social-icon" />, url: 'https://stackoverflow.com/users/18405681/jay-prakash-singh/' },
 ];
+
+export let TechnicalSkills = [
+  { category: 'Web Development', items: ['HTML - 4, 5', 'CSS - 2, 3'], },
+  { category: 'Database', items: ['MongoDB', 'SQL'], },
+  { category: 'Source Code Editor', items: ['Notepad++', 'VS Code'], },
+  { category: 'Framework', items: ['Bootstrap - 3, 4, 5'], },
+  { category: 'Scripting Language', items: ['JavaScript'], },
+  { category: 'Library', items: ['ReactJS'], },
+];
