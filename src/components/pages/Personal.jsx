@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
-import { Container } from 'react-bootstrap';
+import { PersonalDetails } from "../../data/Info";
+import { Col, Container, Row, Table } from 'react-bootstrap';
 
 const Personal = ({ theme }) => {
 
@@ -8,8 +9,27 @@ const Personal = ({ theme }) => {
     return (
 
         <div className={`pro-container ${theme}`}>
-            <Container className="pro-content pages-content">
-                <h1 className='pro-head skill-head mb-4'>Personal Details</h1>
+            <Container className="pro-content">
+                <Row className="pro-row">
+                    <h1 className='pro-head skill-head mb-3'>Personal Details</h1>
+                    <p className='text-center mb-3'>Please find my personal details...</p>
+                    <Col lg={2}></Col>
+                    <Col>
+                        <Row>
+                            <Table responsive bordered>
+                                <tbody>
+                                    {PersonalDetails.map((item, index) => (
+                                        <tr key={index}>
+                                            <td className={`pro-table ${theme}`}>{item.key}</td>
+                                            <td className={`pro-table ${theme}`}>{item.value}</td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </Table>
+                        </Row>
+                    </Col>
+                    <Col lg={2}></Col>
+                </Row>
             </Container>
         </div>
     )

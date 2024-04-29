@@ -14,12 +14,13 @@ const Education = ({ theme }) => {
             <Container className="pro-content pages-content">
                 <h1 className='pro-head skill-head mb-4'>Education Details</h1>
                 <VerticalTimeline>
-                    {EducationDetails.map((educ) => (
-                        <VerticalTimelineElement key={educ.id} icon={<SchoolOutlinedIcon />}
-                            className="vertical-timeline-element--work" contentStyle={{ background: 'rgb(33, 150, 243)', color: '#000' }}
-                            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }} date={educ.date} 
-                            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#000' }}>
-                            <h3 className="vertical-timeline-element-title">{educ.id + "."}</h3>
+                    {EducationDetails.map((edu) => (
+                        <VerticalTimelineElement key={edu.id} icon={<SchoolOutlinedIcon />}
+                            className="vertical-timeline-element--education" date={edu.date}
+                            contentArrowStyle={{ borderRight: '7px solid rgb(33, 150, 243)' }} contentStyle={{ background: 'rgb(33, 150, 243)', color: '#000' }}
+                            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#000' }} >
+                            <h3 className="vertical-timeline-element-title mb-2">{edu.degree} ({edu.field || edu.specialization})</h3>
+                            <h5 className="vertical-timeline-element-subtitle">{edu.institution}</h5>
                         </VerticalTimelineElement>
                     ))}
                 </VerticalTimeline>

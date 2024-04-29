@@ -116,22 +116,14 @@
     font-weight: 600;
 }
   
-.card-header, .pro-card, .pro-list {
-    background-color: #0d6efd;
+.pro-list, .pro-table  {
+    background-color: #0d6efd !important;
     color: #000;
 }
 
-.dark.pro-card, .dark.card-header, .dark.pro-list {
-    background-color: #333;
+.dark.pro-card, .dark.pro-list, .dark.pro-table {
+    background-color: #333 !important;
     color: #fff;
-}
-
-.pro-card, .card-header {
-    border-bottom: 1px solid #fff;
-}
-
-.dark.pro-card, .dark.card-header {
-    border-top: 1px solid #000;
 }
 
 .skill-head {

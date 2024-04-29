@@ -31,9 +31,9 @@ export let ContactsItem = [
 ];
 
 export let EducationDetails = [
-  { id:1, },
-  { id:2, },
-  { id:3, },
+  { id: 1, institution: "Dr. A.P.J. Abdul Kalam Technical University (AKTU), Lucknow", degree: "B. Tech", field: "Computer Science", date: "2012-2016" },
+  { id: 2, institution: "U.P. Board, Prayagraj", degree: "Intermediate", specialization: "PCM", date: "2007-2009" },
+  { id: 3, institution: "U.P. Board, Prayagraj", degree: "High School", specialization: "Science", date: "2005-2007" }
 ];
 
 export let JobSummary = {
@@ -53,6 +53,14 @@ export let JobSummary = {
 export let NavRoutes = [{ navTo: '/', navText: 'Home' }, { navTo: '/about-us', navText: 'About Us' }, { navTo: '/skills', navText: 'Skills' },
 { navTo: '/experience', navText: 'Experience' }, { navTo: '/education', navText: 'Education' },
 { navTo: '/personal-info', navText: 'Personal Info' }, { navTo: '/contact-us', navText: 'Contact Us' },
+];
+
+export let PersonalDetails = [
+  { key: `Father's Name`, value: 'Surendra Singh' },
+  { key: 'Date of Birth', value: '21/08/1992' },
+  { key: 'Gender', value: 'Male' },
+  { key: 'Marital Status', value: 'Single' },
+  { key: 'Nationality', value: 'Indian' },
 ];
 
 export let RoutesComponents = [
