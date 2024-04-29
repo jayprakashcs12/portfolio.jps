@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import CodeOutlinedIcon from '@mui/icons-material/CodeOutlined';
 import { TechnicalSkills } from "../../data/Info";
-import WorkIcon from '@mui/icons-material/Work';
 import { Container } from 'react-bootstrap';
 
 const Skills = ({ theme }) => {
@@ -15,7 +15,7 @@ const Skills = ({ theme }) => {
                 <h1 className='pro-head skill-head mb-4'>Work Experience</h1>
                 <VerticalTimeline>
                     {TechnicalSkills.map((skill, index) => (
-                        <VerticalTimelineElement key={index} icon={<WorkIcon />} className="vertical-timeline-element--work"
+                        <VerticalTimelineElement key={index} icon={<CodeOutlinedIcon />} className="vertical-timeline-element--work"
                             contentStyle={{ background: 'rgb(33, 150, 243)', color: '#000' }}
                             contentArrowStyle={{ borderRight: '7px solid rgb(33, 150, 243)' }}
                             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#000' }}>
