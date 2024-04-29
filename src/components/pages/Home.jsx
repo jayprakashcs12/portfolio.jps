@@ -7,9 +7,7 @@ import { ReactTyped } from "react-typed";
 
 const Home = ({ theme }) => {
 
-    useEffect(() => {
-        document.title = "Jay Prakash Singh";
-    }, []);
+    useEffect(() => { document.title = "Jay Prakash Singh"; }, []);
 
     let typoStyle = { color: theme === 'dark' ? '#854ce6' : '#155390' };
 

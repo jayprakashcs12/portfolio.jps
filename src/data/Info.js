@@ -11,6 +11,14 @@ import { BsStackOverflow, BsWhatsapp } from "react-icons/bs";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { BiLogoGmail } from "react-icons/bi";
 
+export let BioData = {
+  fullName: "Jay Prakash Singh", roles: ["(Front End Developer)", "(ReactJS Developer)", "(UI Developer)"],
+  github: "https://github.com/jayprakashcs12/", resume: "https://drive.google.com/file/d/19ZKBcu6kLepC_wYcGTMEJculz_3zjFrx/view?usp=sharing",
+  description:
+    `As a motivated and adaptable front-end developer, I thrive on embracing new challenges. My passion for learning drives me to consistently deliver 
+    high-quality results. With a positive attitude and a growth mindset, I am committed to making a meaningful contribution to every project I undertake, 
+    aiming to achieve greatness in the process`
+};
 
 export let Contacts = { 
   phoneNumber: "8563001092", personName: 'Mail Me', phoneURL: "tel:8563001092", whatsAppUrl: "https://wa.me/8563001092", mailUrl: "mailto:jayprakash199221@gmail.com",
@@ -22,14 +30,11 @@ export let ContactsItem = [
   { text: Contacts.phoneNumber, url: Contacts.whatsAppUrl, icon: <BsWhatsapp className="social-icon" /> }
 ];
 
-export let BioData = {
-  fullName: "Jay Prakash Singh", roles: ["(Front End Developer)", "(ReactJS Developer)", "(UI Developer)"],
-  github: "https://github.com/jayprakashcs12/", resume: "https://drive.google.com/file/d/19ZKBcu6kLepC_wYcGTMEJculz_3zjFrx/view?usp=sharing",
-  description:
-    `As a motivated and adaptable front-end developer, I thrive on embracing new challenges. My passion for learning drives me to consistently deliver 
-    high-quality results. With a positive attitude and a growth mindset, I am committed to making a meaningful contribution to every project I undertake, 
-    aiming to achieve greatness in the process`
-};
+export let EducationDetails = [
+  { id:1, },
+  { id:2, },
+  { id:3, },
+];
 
 export let JobSummary = {
   title: "Professional Summary",
@@ -50,7 +55,7 @@ export let NavRoutes = [{ navTo: '/', navText: 'Home' }, { navTo: '/about-us', n
 { navTo: '/personal-info', navText: 'Personal Info' }, { navTo: '/contact-us', navText: 'Contact Us' },
 ];
 
-export let routesComponents = [
+export let RoutesComponents = [
   { path: '/', component: Home }, { path: '/personal-info', component: Personal }, { path: '/experience', component: Experience },
   { path: '/education', component: Education }, { path: '/contact-us', component: Contact }, { path: '/about-us', component: About },
   { path: '/skills', component: Skills },
@@ -76,25 +81,45 @@ export let TechnicalSkills = [
 ];
 
 export let WorkExperience = [
-  {
-    id: 1,
-    company: "Lobotus Technology",
-    position: "UI Developer",
-    date: "Jan-2021 - Dec-2023",
-    description: ["Creative Direction", "User Experience", "Visual Design", "Project Management", "Team Leading"]
+  { id: 1, company: "Lobotus Technology", 
+    position: "UI Developer", date: "Jan-2021 - Dec-2023",
+    description: [
+      "Involved in micro front-end design and development of the GUI for the EMR platform",
+      "Module testing, module integration, and testing all the modules together",
+      "Building reusable components and front-end libraries for future use",
+      "Use mark-up languages like HTML to create user-friendly web pages",
+      "Develop website features that can enhance the user experience",
+      "Reviewing application requirements and interface designs",
+      "Extensive experience using React-Bootstrap for layout",
+      "Design changes as per client requirements",
+      "Write clean and well-structured code",
+      "Develop responsive web-based UI",
+      "Playing the role of team helper",
+      "Including API integration"
+    ]
   },
   {
-    id: 2,
-    company: "Bangalore Softsell Pvt Ltd",
-    position: "Junior Software Developer",
-    date: "Oct-2019 - Mar-2021",
-    description: ["Creative Direction", "User Experience", "Visual Design", "SEO", "Online Marketing"]
+    id: 2, company: "Bangalore Softsell Pvt Ltd",
+    position: "Junior Software Developer", date: "Oct-2019 - Mar-2021",
+    description: [
+      "Utilized AngularJS to develop a single-page application, implementing data binding and synchronization with the server, along with HTML, CSS, Bootstrap, AngularJS & PHP",
+      "Involved in designing the user experience interface UI/UX strategy, UI requirements, and converting findings into UI designs",
+      "Maintaining and optimizing mobile/web applications",
+      "Develop UI with the latest front-end technologies",
+      "Write clean and well-structured codes"
+    ]
   },
   {
-    id: 3,
-    company: "Cybotrix Technology",
-    position: "Web Developer",
-    date: "Sept-2017 - Oct-2019",
-    description: ["User Experience", "Visual Design"]
+    id: 3, company: "Cybotrix Technology",
+    position: "Web Developer", date: "Sept-2017 - Oct-2019",
+    description: [
+      "Designed HTML templates for use on all pages on the website working with CSS Background, positioning, text, border, margin, padding, and table",
+      "Handled cross-browser compatibility issues & features to enhance user experience",
+      "Optimize web pages for maximum speed and boost their scalability",
+      "Updated the website from time to time for special requirements", 
+      "Ensuring web design is optimized for smartphones",
+      "Extensive experience using Bootstrap for layout",
+      "Troubleshooting problems with performance"
+    ]
   }
-]; 
+];

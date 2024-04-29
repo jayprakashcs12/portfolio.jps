@@ -1,6 +1,8 @@
-import React, { useEffect } from 'react'
-import { Card, Col, Container, ListGroup, Row } from 'react-bootstrap';
+import React, { useEffect } from 'react';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { TechnicalSkills } from "../../data/Info";
+import WorkIcon from '@mui/icons-material/Work';
+import { Container } from 'react-bootstrap';
 
 const Skills = ({ theme }) => {
 
@@ -9,28 +11,23 @@ const Skills = ({ theme }) => {
     return (
 
         <div className={`pro-container ${theme}`}>
-            <Container className='pro-content'>
-                <Row className='pro-row'>
-                    <h1 className='pro-head skill-head'>Technical Skills</h1>
-                    <Col lg={2}></Col>
-                    <Col>
-                        <Row className="mt-3">
-                            {TechnicalSkills.map((skill, i) => (
-                                <Col key={i} lg={4} className="mb-2 mt-2">
-                                    <Card>
-                                        <Card.Header as="h4" className={`card-header ${theme}`}>{skill.category}</Card.Header>
-                                        <ListGroup variant="flush">
-                                            {skill.items.map((item, idx) => (
-                                                <ListGroup.Item key={idx} className={`pro-list ${theme}`}>{item}</ListGroup.Item>
-                                            ))}
-                                        </ListGroup>
-                                    </Card>
-                                </Col>
-                            ))}
-                        </Row>
-                    </Col>
-                    <Col lg={2}></Col>
-                </Row>
+            <Container className="pro-content pages-content">
+                <h1 className='pro-head skill-head mb-4'>Work Experience</h1>
+                <VerticalTimeline>
+                    {TechnicalSkills.map((skill, index) => (
+                        <VerticalTimelineElement key={index} icon={<WorkIcon />} className="vertical-timeline-element--work"
+                            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#000' }}
+                            contentArrowStyle={{ borderRight: '7px solid rgb(33, 150, 243)' }}
+                            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#000' }}>
+                            <h3 className="vertical-timeline-element-title">{skill.category}</h3>
+                            <ul className='mt-2 unorder-list'>
+                                {skill.items.map((item, i) => (
+                                    <li key={i} style={{ marginTop: "0.5rem" }}>{item}</li>
+                                ))}
+                            </ul>
+                        </VerticalTimelineElement>
+                    ))}
+                </VerticalTimeline>
             </Container>
         </div>
     )

@@ -5,9 +5,7 @@ import emailjs from 'emailjs-com';
 
 const Contact = ({ theme }) => {
 
-    useEffect(() => {
-        document.title = "Contact Us | Jay Prakash Singh";
-    }, []);
+    useEffect(() => { document.title = "Contact Us | Jay Prakash Singh"; }, []);
 
     let [careerData, setCareerData] = useState({
         fname: "", mname: "", lname: "", email: "", mobile: "", address: "", message: ""
