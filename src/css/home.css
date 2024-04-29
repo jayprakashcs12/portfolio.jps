@@ -116,14 +116,13 @@
     font-weight: 600;
 }
   
-.pro-list, .pro-table  {
+.pro-table  {
     background-color: #0d6efd !important;
-    color: #000;
 }
 
-.dark.pro-card, .dark.pro-list, .dark.pro-table {
+.dark.pro-table {
     background-color: #333 !important;
-    color: #fff;
+    color: #fff !important;
 }
 
 .skill-head {
