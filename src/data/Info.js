@@ -36,7 +36,8 @@ export let EducationDetails = [
   { id: 3, institution: "U.P. Board, Prayagraj", degree: "High School", specialization: "Science", date: "2005-2007" }
 ];
 
-export let JobSummary = { title: "Professional Summary", description: [
+export let JobSummary = { 
+  title: "Professional Summary", description: [
     "Over 5+ Years of IT experience which includes 3+ Years of Extensive experience as a Front-End Developer, 1 Year as a PHP Developer & 2+ Year as a ReactJS Developer",
     "Have a working knowledge of API integration, and Cross-Browser (Platform Compatibility Issues)",
     "Worked on creating responsive websites for smart devices using responsive design and Media Queries",
