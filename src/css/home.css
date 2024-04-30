@@ -29,10 +29,6 @@
     margin: 2% 0;
 }
 
-.pro-btn {
-    margin-right: 2%;
-}
-
 .pro-input.light, .pro-input.light:active {
     background-color: var(--button-text-color2);
 }
@@ -43,15 +39,15 @@
 
 .pro-table.light {
     background-color: var(--button-text-color2);
-    color:#fff;
+    color:#ffffff;
 }
 
 .pro-input:focus {
     box-shadow: none;
 }
 
-.pro-submit, .pro-submit:hover {
-    background-color: #007ba7;
+.pro-btn {
+    margin-right: 20px;
 }
 
 .pro-toast {
@@ -72,7 +68,7 @@
     width: 100%;
 }
 
-.btn-down {
+.btn-home {
     background-size: 100% auto;
     text-transform: uppercase;
     border-radius: 10px;
@@ -81,10 +77,11 @@
     max-width: 300px;
     transition: .5s;
     display: block;
-    color: #fff;
+    color: #ffffff;
     border: none;
     margin: 4% 0;
     width: 95%;
+    border: none;
 }
 
 .resume-btn {
@@ -116,7 +113,7 @@
 }
 
 .dark.pro-table {
-    background-color: #333 !important;
+    background-color: var(--button-bg-color);
     color: var(--button-text-color);
 }
 
@@ -136,8 +133,8 @@
 }
 
 .vertical-timeline-element-content {
-    box-shadow: none !important;
-    border: 1px solid #fff !important;
+    box-shadow: none;
+    border: 1px solid #ffffff;
 }
 
 .vertical-timeline {
@@ -147,18 +144,54 @@
 }
 
 .social-icon {
-    font-size: 20px;
     margin-right: 10px;
+    font-size: 20px;
 }
 
-.foot-link:hover {
-    font-weight: 600 !important;
+.pro-reset {
+    border: 1px solid var(--button-border-color);
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
 }
 
-.foot-link:hover {
-    color: #0d6efd !important;
+.pro-reset:hover {
+    border: 1px solid var(--button-hover-border-color);
+    background-color: var(--button-hover-bg-color);
+    color: var(--button-hover-text-color);
 }
 
-.foot-link.dark:hover {
-    color: #082148 !important;
+.dark.pro-reset {
+    border: 1px solid var(--dark-button-border-color);
+    background-color: var(--dark-button-bg-color);
+    color: var(--dark-button-text-color);
+}
+
+.dark.pro-reset:hover {
+    border: 1px solid var(--dark-button-hover-border-color);
+    background-color: var(--dark-button-hover-bg-color);
+    color: var(--dark-button-hover-text-color);
+}
+
+.pro-submit {
+    border: 1px solid var(--submit-border-color);
+    background-color: var(--submit-bg-color);
+    color: var(--submit-text-color);
+}
+
+.pro-submit:hover {
+    border: 1px solid var(--submit-hover-border-color);
+    background-color: var(--submit-hover-bg-color);
+    color: var(--submit-hover-text-color);
+}
+
+.dark.pro-submit {
+    border: 1px solid var(--dark-submit-border-color);
+    background-color: var(--dark-submit-bg-color);
+    color: var(--dark-submit-text-color);
+}
+
+.dark.pro-submit:hover {
+    border: 1px solid var(--dark-submit-hover-border-color);
+    background-color: var(--dark-submit-hover-bg-color);
+    color: var(--dark-submit-hover-text-color);
 }

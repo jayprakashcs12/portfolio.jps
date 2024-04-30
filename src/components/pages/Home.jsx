@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
+import { BioData, TypoStyle } from "../../data/Info";
 import { LiaDownloadSolid } from "react-icons/lia";
 import heroImg from "../../images/photo.png";
-import { BioData, TypoStyle } from "../../data/Info";
 import { ReactTyped } from "react-typed";
 
 const Home = ({ theme }) => {
@@ -19,8 +19,9 @@ const Home = ({ theme }) => {
                             <ReactTyped className="text-blue-700 font-bold" strings={BioData.roles} typeSpeed={40} backSpeed={50} loop={true} />
                         </p>
                         <p className='pro-data'>{BioData.description + "."}</p>
-                        <Button className={`btn-down resume-btn ${theme}`} href={BioData.resume} target='display'>
-                            <LiaDownloadSolid className="social-icon" />Download Resume</Button>
+                        <Button className={`btn-home resume-btn ${theme}`} href={BioData.resume} target='display'>
+                            <LiaDownloadSolid className="social-icon" />Download Resume
+                        </Button>
                     </Col>
                     <Col className='img-div' md={6} sm={12}>
                         <img src={heroImg} alt="profile" className='pro-img' />

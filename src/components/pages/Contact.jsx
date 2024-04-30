@@ -43,9 +43,7 @@ const Contact = ({ theme }) => {
             }, 'bhsKrqerDTX-guM48')
             .then((resp) => {
                 toast.success("Form Submitted Successfully...!");
-                setCareerData({
-                    fname: "", mname: "", lname: "", email: "", mobile: "", address: "", message: ""
-                });
+                setCareerData({ fname: "", mname: "", lname: "", email: "", mobile: "", address: "", message: "" });
             }, (error) => {
                 console.error('Failed to send email.... ', error);
                 toast.error("Failed to submit form. Please try again later...!");
@@ -54,14 +52,12 @@ const Contact = ({ theme }) => {
     },
 
     handleClear = (e) => {
-        setCareerData({
-            fname: "", mname: "", lname: "", email: "", mobile: "", address: "", message: ""
-        });
+        setCareerData({ fname: "", mname: "", lname: "", email: "", mobile: "", address: "", message: "" });
         toast.info("Input Fields Cleared Successfully...!");
     },
 
-    ContactButtons = [{ text: 'Send', variant: 'primary', type: 'submit', className: 'pro-btn btn-md pro-submit', onClick: handleSubmit },
-    { text: 'Clear', variant: 'primary', type: 'reset', className: 'pro-btn btn-md pro-reset', onClick: handleClear }
+    ContactButtons = [{ text: 'Send', variant: 'primary', type: 'submit', className: `pro-btn btn-md pro-submit  ${theme}`, onClick: handleSubmit },
+    { text: 'Clear', variant: 'primary', type: 'reset', className: `pro-btn btn-md pro-reset  ${theme}`, onClick: handleClear }
     ];
 
     return (

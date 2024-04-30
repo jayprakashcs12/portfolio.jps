@@ -31,9 +31,20 @@
 
 .foot-link {
     text-decoration: none;
+}
+
+.foot-link, .foot-link.dark {
     color: var(--button-text-color);
 }
 
-.foot-link.dark {
-    color: var(--button-text-color);
+.foot-link:hover {
+    font-weight: 600 !important;
+}
+
+.foot-link:hover {
+    color: var(--button-text-color2);
+}
+
+.foot-link.dark:hover {
+    color: #082148 !important;
 }
