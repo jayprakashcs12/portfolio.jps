@@ -33,8 +33,16 @@
     background-color: var(--button-text-color2);
 }
 
-.pro-input.light, .pro-input.light:active, .pro-input::placeholder {
+.pro-input.light, .pro-input.light:active {
     color: var(--button-text-color1);
+}
+
+.pro-input::placeholder {
+    color: var(--input-place-color);
+}
+
+.pro-input.dark::placeholder {
+    color: var(--dark-input-place-color);
 }
 
 .pro-table.light {

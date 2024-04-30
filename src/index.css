@@ -11,43 +11,45 @@
 }
 
 :root {
-  --button-bg-color: #9eeaf9;
-  --button-bg-color1: #0d6fed;
+  --button-bg-color:#9eeaf9;
+  --button-bg-color1:#0d6fed;
 
-  --button-border-color: #0d6fed;
-  --button-border-color1: #ff0000;
-  --button-border-color2: #ffffff;
+  --button-border-color:#0d6fed;
+  --button-border-color1:#ff0000;
+  --button-border-color2:#ffffff;
 
-  --button-text-color: #333333;
-  --button-text-color1: #ffffff;
-  --button-text-color2: #0d6efd;
-  --button-text-color3: #ff0000;
+  --button-text-color:#333333;
+  --button-text-color1:#ffffff;
+  --button-text-color2:#0d6efd;
+  --button-text-color3:#ff0000;
+  --input-place-color:#ffffff;
   
-  --button-hover-bg-color: #ff0000;
+  --button-hover-bg-color:#ff0000;
 
-  --button-hover-border-color: #0d6fed;
-  --button-hover-border-color1: #9eeaf9;
-  --button-hover-border-color2: #ff0000;
+  --button-hover-border-color:#0d6fed;
+  --button-hover-border-color1:#9eeaf9;
+  --button-hover-border-color2:#ff0000;
 
-  --button-hover-text-color: #0d6fed;
-  --button-hover-text-color1: #ffffff;
+  --button-hover-text-color:#0d6fed;
+  --button-hover-text-color1:#ffffff;
   
-  --dark-button-bg-color: #333333;
-  --dark-button-bg-color1: #ffffff;
+  --dark-button-bg-color:#333333;
+  --dark-button-bg-color1:#ffffff;
 
-  --dark-button-border-color: #333333;
-  --dark-button-border-color1: #ffffff;
-  --dark-button-border-color2: #ffffff;
+  --dark-button-border-color:#333333;
+  --dark-button-border-color1:#ffffff;
+  --dark-button-border-color2:#ffffff;
 
-  --dark-button-text-color: #333333;
-  --dark-button-text-color1: #ffffff;
+  --dark-button-text-color:#333333;
+  --dark-button-text-color1:#ffffff;
+  --dark-input-place-color:#000000;
 
-  --dark-button-hover-border-color: #333333;
-  --dark-button-hover-border-color1: #ffffff;
+  --dark-button-hover-border-color:#333333;
+  --dark-button-hover-border-color1:#ffffff;
 
-  --dark-button-hover-bg-color: #333333;
-  --dark-button-hover-bg-color1: #ffffff;
+  --dark-button-hover-bg-color:#333333;
+  --dark-button-hover-bg-color1:#ffffff;
 
-  --dark-button-hover-text-color: #333333;
-  --dark-button-hover-text-color1: #ffffff;
+  --dark-button-hover-text-color:#333333;
+  --dark-button-hover-text-color1:#ffffff;
 }
