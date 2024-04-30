@@ -39,7 +39,7 @@
 
 .pro-table.light {
     background-color: var(--button-text-color2);
-    color:#ffffff;
+    color:var(--button-text-color1);
 }
 
 .pro-input:focus {
@@ -69,6 +69,7 @@
 }
 
 .btn-home {
+    color: var(--button-text-color1);
     background-size: 100% auto;
     text-transform: uppercase;
     border-radius: 10px;
@@ -77,7 +78,6 @@
     max-width: 300px;
     transition: .5s;
     display: block;
-    color: #ffffff;
     border: none;
     margin: 4% 0;
     width: 95%;
@@ -113,8 +113,8 @@
 }
 
 .dark.pro-table {
-    background-color: var(--button-bg-color);
-    color: var(--button-text-color);
+    background-color: var(--dark-button-bg-color);
+    color: var(--dark-button-text-color1);
 }
 
 .skill-head {
@@ -128,13 +128,13 @@
 
 .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
     font-size: 20px;
-    color: #0d6efd;
+    color: var(--button-hover-border-color);
     top: 0px;
 }
 
 .vertical-timeline-element-content {
     box-shadow: none;
-    border: 1px solid #ffffff;
+    border: 1px solid var(--button-text-color1);
 }
 
 .vertical-timeline {
@@ -149,49 +149,49 @@
 }
 
 .pro-reset {
-    border: 1px solid var(--button-border-color);
+    border: 1px solid var(--button-border-color1);
     background-color: var(--button-bg-color);
-    color: var(--button-text-color);
+    color: var(--button-text-color3);
 }
 
 .pro-reset:hover {
-    border: 1px solid var(--button-hover-border-color);
+    border: 1px solid var(--button-hover-border-color2);
     background-color: var(--button-hover-bg-color);
-    color: var(--button-hover-text-color);
+    color: var(--button-hover-text-color1);
 }
 
 .dark.pro-reset {
-    border: 1px solid var(--dark-button-border-color);
+    border: 1px solid var(--dark-button-border-color1);
     background-color: var(--dark-button-bg-color);
-    color: var(--dark-button-text-color);
+    color: var(--dark-button-text-color1);
 }
 
 .dark.pro-reset:hover {
     border: 1px solid var(--dark-button-hover-border-color);
-    background-color: var(--dark-button-hover-bg-color);
+    background-color: var(--dark-button-hover-bg-color1);
     color: var(--dark-button-hover-text-color);
 }
 
 .pro-submit {
-    border: 1px solid var(--submit-border-color);
-    background-color: var(--submit-bg-color);
-    color: var(--submit-text-color);
+    border: 1px solid var(--button-bg-color1);
+    background-color: var(--button-bg-color1);
+    color: var(--button-text-color1);
 }
 
 .pro-submit:hover {
-    border: 1px solid var(--submit-hover-border-color);
-    background-color: var(--submit-hover-bg-color);
-    color: var(--submit-hover-text-color);
+    border: 1px solid var(--button-hover-border-color);
+    background-color: var(--button-hover-bg-color1);
+    color: var(--button-hover-text-color);
 }
 
 .dark.pro-submit {
-    border: 1px solid var(--dark-submit-border-color);
-    background-color: var(--dark-submit-bg-color);
-    color: var(--dark-submit-text-color);
+    border: 1px solid var(--dark-button-hover-border-color);
+    background-color: var(--dark-button-hover-bg-color1);
+    color: var(--dark-button-hover-text-color);
 }
 
 .dark.pro-submit:hover {
-    border: 1px solid var(--dark-submit-hover-border-color);
-    background-color: var(--dark-submit-hover-bg-color);
-    color: var(--dark-submit-hover-text-color);
+    border: 1px solid var(--dark-button-border-color1);
+    background-color: var(--dark-button-bg-color);
+    color: var(--dark-submit-text-color);
 }

@@ -1,6 +1,4 @@
-.pro-button,
-.pro-container,
-.pro-navbar {
+.pro-button, .pro-container, .pro-navbar {
     background-color: var(--button-bg-color);
     color: var(--button-text-color);
     transition: 0.1s;
@@ -8,14 +6,12 @@
 
 .pro-navbar {
     cursor: pointer;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
-.dark .pro-button,
-.dark .pro-container,
-.dark .pro-navbar {
-    background-color: var(--button-bg-color);
-    color: var(--button-text-color);
+.dark.pro-button, .dark.pro-container, .dark.pro-navbar {
+    background-color: var(--dark-button-bg-color);
+    color: var(--dark-button-text-color1);
 }
 
 .main-navbar {
