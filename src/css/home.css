@@ -134,26 +134,11 @@
 
 .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
     font-size: 20px;
-    color: #000;
+    color: #fff;
     top: 0px;
-}
-
-.vertical-timeline--two-columns .vertical-timeline-element-content {
-    margin-left: 0;
-    padding: 1.5em;
-    width: 45%;
 }
 
 .vertical-timeline-element-content {
     box-shadow: none !important;
     border: 1px solid #fff !important;
-}
-
-.vertical-timeline-element {
-    margin: 2rem 0;
-}
-
-.vertical-timeline {
-    margin: 0 !important;
-    padding: 0 !important;
 }
