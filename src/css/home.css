@@ -146,6 +146,7 @@
 
 .vertical-timeline-element-content {
     box-shadow: none !important;
+    border: 1px solid #fff !important;
 }
 
 .vertical-timeline-element {

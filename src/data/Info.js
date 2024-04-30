@@ -80,6 +80,13 @@ export let TechnicalSkills = [
   { category: 'Scripting Language', items: ['JavaScript'], }, { category: 'Library', items: ['ReactJS'], },
 ];
 
+export let theme = 'dark';
+
+export let themes = {
+  dark: { content: { background: '#333', color: '#fff' }, contentArrow: { borderRight: '7px solid #fff' } },
+  light: { content: { background: '#0d6fed', color: '#333' }, contentArrow: { borderRight: '7px solid #0d6fed' } },
+};
+
 export let WorkExperience = [
   { id: 1, company: "Lobotus Technology", position: "UI Developer", date: "Jan-2021 - Dec-2023", description: [
       "Involved in micro front-end design and development of the GUI for the EMR platform", 
