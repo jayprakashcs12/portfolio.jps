@@ -11,30 +11,15 @@
 }
 
 .light {
-  --button-bg-color: #bae7f5;
+  --button-bg-color: #9eeaf9;
   --button-text-color: #333;
   --button-text-color1: #fff;
+  --button-text-color2: #0d6efd;
 }
 
 .dark {
   --button-bg-color: #333;
   --button-text-color: #fff;
   --button-text-color1: #333;
-}
-
-.social-icon {
-  font-size: 20px;
-  margin-right: 10px;
-}
-
-.foot-link:hover {
-  font-weight: 600 !important;
-}
-
-.foot-link:hover {
-  color: #0d6efd !important;
-}
-
-.foot-link.dark:hover {
-  color: #082148 !important;
+  --button-text-color2: #0d6efd;
 }
