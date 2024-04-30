@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
-import { EducationDetails, themes } from "../../data/Info";
+import { EducationDetails, TimeThemes } from "../../data/Info";
 import { Container } from 'react-bootstrap';
 
 const Education = ({ theme }) => {
@@ -16,7 +16,7 @@ const Education = ({ theme }) => {
                 <VerticalTimeline>
                     {EducationDetails.map((edu) => (
                         <VerticalTimelineElement key={edu.id} icon={<SchoolOutlinedIcon />} className="vertical-timeline-element--education" date={edu.date}
-                            contentArrowStyle={themes[theme].contentArrow} contentStyle={themes[theme].content} iconStyle={themes[theme].content}>
+                            contentArrowStyle={TimeThemes[theme].contentArrow} contentStyle={TimeThemes[theme].content} iconStyle={TimeThemes[theme].content}>
                             <h3 className="vertical-timeline-element-title mb-2">{edu.degree} ({edu.field || edu.specialization})</h3>
                             <h5 className="vertical-timeline-element-subtitle">{edu.institution}</h5>
                         </VerticalTimelineElement>

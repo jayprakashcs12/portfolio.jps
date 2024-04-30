@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import { WorkExperience, themes } from "../../data/Info";
+import { WorkExperience, TimeThemes } from "../../data/Info";
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 import { Container } from 'react-bootstrap';
 
@@ -16,7 +16,7 @@ const Experience = ({ theme }) => {
                 <VerticalTimeline>
                     {WorkExperience.map((work) => (
                         <VerticalTimelineElement key={work.id} icon={<WorkOutlineIcon />} className="vertical-timeline-element--work" date={work.date}
-                            contentArrowStyle={themes[theme].contentArrow} contentStyle={themes[theme].content} iconStyle={themes[theme].content}>
+                            contentArrowStyle={TimeThemes[theme].contentArrow} contentStyle={TimeThemes[theme].content} iconStyle={TimeThemes[theme].content}>
                             <h3 className="vertical-timeline-element-title">{work.company}</h3>
                             <h5 className="vertical-timeline-element-subtitle">{work.position}</h5>
                             <ul className='mt-2 unorder-list'>

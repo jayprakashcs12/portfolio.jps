@@ -4,7 +4,7 @@ import { JobSummary } from "../../data/Info";
 
 const About = ({ theme }) => {
 
-    useEffect(() => { document.title = "About Us | Jay Prakash Singh"; }, [])
+    useEffect(() => { document.title = "About Us | Jay Prakash Singh"; }, []);
 
     return (
         

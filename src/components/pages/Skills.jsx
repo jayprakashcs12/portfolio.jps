@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import CodeOutlinedIcon from '@mui/icons-material/CodeOutlined';
-import { TechnicalSkills, themes } from "../../data/Info";
+import { TechnicalSkills, TimeThemes } from "../../data/Info";
 import { Container } from 'react-bootstrap';
 
 const Skills = ({ theme }) => {
@@ -16,7 +16,7 @@ const Skills = ({ theme }) => {
                 <VerticalTimeline>
                     {TechnicalSkills.map((skill, index) => (
                         <VerticalTimelineElement key={index} icon={<CodeOutlinedIcon />}  className="vertical-timeline-element--work" 
-                            contentArrowStyle={themes[theme].contentArrow} contentStyle={themes[theme].content} iconStyle={themes[theme].content}>
+                            contentArrowStyle={TimeThemes[theme].contentArrow} contentStyle={TimeThemes[theme].content} iconStyle={TimeThemes[theme].content}>
                             <h3 className="vertical-timeline-element-title">{skill.category}</h3>
                             <ul className='mt-2 unorder-list'>
                                 {skill.items.map((item, i) => (
