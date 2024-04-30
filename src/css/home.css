@@ -148,6 +148,10 @@
     box-shadow: none !important;
 }
 
+.vertical-timeline-element {
+    margin: 2rem 0;
+}
+
 .vertical-timeline {
     margin: 0 !important;
     padding: 0 !important;
