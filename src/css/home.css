@@ -116,11 +116,11 @@
   
 .pro-table  {
     background-color: #0d6efd !important;
+    color: #fff !important;
 }
 
 .dark.pro-table {
     background-color: #333 !important;
-    color: #fff !important;
 }
 
 .skill-head {

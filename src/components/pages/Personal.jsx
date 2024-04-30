@@ -11,7 +11,7 @@ const Personal = ({ theme }) => {
         <div className={`pro-container ${theme}`}>
             <Container className="pro-content">
                 <Row className="pro-row">
-                    <h1 className='pro-head skill-head mb-3'>Personal Details</h1>
+                    <h1 className='pro-head skill-head mb-2'>Personal Details</h1>
                     <p className='text-center mb-3'>Please find my personal details...</p>
                     <Col lg={2}></Col>
                     <Col>

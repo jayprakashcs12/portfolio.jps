@@ -16,9 +16,8 @@ const Education = ({ theme }) => {
                 <VerticalTimeline>
                     {EducationDetails.map((edu) => (
                         <VerticalTimelineElement key={edu.id} icon={<SchoolOutlinedIcon />}
-                            className="vertical-timeline-element--education" date={edu.date}
-                            contentArrowStyle={{ borderRight: '7px solid rgb(33, 150, 243)' }} contentStyle={{ background: 'rgb(33, 150, 243)', color: '#000' }}
-                            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#000' }} >
+                            className="vertical-timeline-element--education" date={edu.date} contentArrowStyle={{ borderRight: '7px solid #0d6fed' }} 
+                            contentStyle={{ background: '#0d6fed', color: '#fff' }} iconStyle={{ background: '#0d6fed', color: '#fff' }} >
                             <h3 className="vertical-timeline-element-title mb-2">{edu.degree} ({edu.field || edu.specialization})</h3>
                             <h5 className="vertical-timeline-element-subtitle">{edu.institution}</h5>
                         </VerticalTimelineElement>

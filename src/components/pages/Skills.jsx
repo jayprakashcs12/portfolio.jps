@@ -15,9 +15,9 @@ const Skills = ({ theme }) => {
                 <h1 className='pro-head skill-head mb-4'>Work Experience</h1>
                 <VerticalTimeline>
                     {TechnicalSkills.map((skill, index) => (
-                        <VerticalTimelineElement key={index} icon={<CodeOutlinedIcon />} className="vertical-timeline-element--work"
-                            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#000' }} contentArrowStyle={{ borderRight: '7px solid rgb(33, 150, 243)' }}
-                            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#000' }}>
+                        <VerticalTimelineElement key={index} icon={<CodeOutlinedIcon />} 
+                            className="vertical-timeline-element--work" contentArrowStyle={{ borderRight: '7px solid #0d6fed' }} 
+                            contentStyle={{ background: '#0d6fed', color: '#fff' }} iconStyle={{ background: '#0d6fed', color: '#fff' }} >
                             <h3 className="vertical-timeline-element-title">{skill.category}</h3>
                             <ul className='mt-2 unorder-list'>
                                 {skill.items.map((item, i) => (
