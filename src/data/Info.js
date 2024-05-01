@@ -90,7 +90,7 @@ export let TimeThemes = {
 export let TypoStyle = (theme) => ({ color: theme === 'dark' ? '#854ce6' : '#155390' });
 
 export let WorkExperience = [
-  { id: 1, company: "Lobotus Technology", position: "UI Developer", date: "Jan-2021 - Dec-2023", description: [
+  { id: 1, company: "Lobotus Technology", position: "UI Developer", date: "Jan-2022 - Dec-2023", description: [
       "Involved in micro front-end design and development of the GUI for the EMR platform", 
       "Module testing, module integration, and testing all the modules together",
       "Building reusable components and front-end libraries for future use", 
