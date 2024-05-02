@@ -84,10 +84,10 @@ export let theme = 'dark';
 
 export let TimeThemes = {
   dark: { content: { background: '#333', color: '#fff' }, contentArrow: { borderRight: '7px solid #fff' } },
-  light: { content: { background: '#0d6fed', color: '#fff' }, contentArrow: { borderRight: '7px solid #0d6fed' } },
+  light: { content: { background: '#08859d', color: '#fff' }, contentArrow: { borderRight: '7px solid #08859d' } },
 };
 
-export let TypoStyle = (theme) => ({ color: theme === 'dark' ? '#854ce6' : '#155390' });
+export let TypoStyle = (theme) => ({ color: theme === 'dark' ? '#08859d' : '#854ce6' });
 
 export let WorkExperience = [
   { id: 1, company: "Lobotus Technology", position: "UI Developer", date: "Jan-2022 - Dec-2023", description: [
