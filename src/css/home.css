@@ -136,18 +136,18 @@
 
 .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
     font-size: 20px;
-    color: var(--button-hover-border-color);
+    color: var(--button-hover-text-color);
     top: 0px;
 }
 
 .vertical-timeline-element-content {
     box-shadow: none;
-    border: 1px solid var(--button-text-color1);
+    border: 1px solid var(--times-text-color);
 }
 
 .vertical-timeline {
-    width: 100%;
     max-width: 100%;
+    width: 100%;
     padding: 0;
 }
 
