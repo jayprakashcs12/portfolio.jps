@@ -21,7 +21,8 @@ export let BioData = {
 };
 
 export let Contacts = { 
-  phoneNumber: "8563001092", personName: 'Mail Me', phoneURL: "tel:8563001092", whatsAppUrl: "https://wa.me/8563001092", mailUrl: "mailto:jayprakash199221@gmail.com",
+  phoneNumber: "8563001092", personName: 'Mail Me', phoneURL: "tel:8563001092", whatsAppUrl: "https://wa.me/8563001092", 
+  mailUrl: "mailto:jayprakash199221@gmail.com",
 };
 
 export let ContactsItem = [
@@ -83,8 +84,8 @@ export let TechnicalSkills = [
 export let theme = 'dark';
 
 export let TimeThemes = {
-  dark: { content: { background: '#333', color: '#fff' }, contentArrow: { borderRight: '7px solid #fff' } },
-  light: { content: { background: '#08859d', color: '#fff' }, contentArrow: { borderRight: '7px solid #08859d' } },
+  dark:  { content: { background: '#333333', color: '#ffffff' }, contentArrow: { borderRight: '7px solid #ffffff' }},
+  light: { content: { background: '#08859d', color: '#ffffff' }, contentArrow: { borderRight: '7px solid #08859d' }},
 };
 
 export let TypoStyle = (theme) => ({ color: theme === 'dark' ? '#08859d' : '#854ce6' });

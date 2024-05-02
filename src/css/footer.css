@@ -30,10 +30,9 @@
 }
 
 .foot-link {
+    display:flex;
+    align-items: center;
     text-decoration: none;
-}
-
-.foot-link {
     color: #333;
 }
 
@@ -48,4 +47,14 @@
 
 .foot-link.dark:hover {
     color: #082148 !important;
+}
+
+.main-list-style {
+    list-style-type: none !important;
+    padding: 0;
+    margin: 0;
+}
+
+.list-style {
+    margin-top: 2%;
 }
