@@ -84,7 +84,7 @@ export let TechnicalSkills = [
 export let theme = 'dark';
 
 export let TimeThemes = {
-  dark:  { content: { background: '#333333', color: '#ffffff' }, contentArrow: { borderRight: '7px solid #ffffff' }},
+  dark:  { content: { background: '#393e46', color: '#ffffff' }, contentArrow: { borderRight: '7px solid #ffffff' }},
   light: { content: { background: '#08859d', color: '#ffffff' }, contentArrow: { borderRight: '7px solid #08859d' }},
 };
 
