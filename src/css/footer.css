@@ -41,8 +41,9 @@
 }
 
 .foot-link:hover {
-    font-weight: 600 !important;
+    transform: scale3d(.98, .98, .98);
     color: var(--color00);
+    font-weight: 600;
 }
 
 .foot-link.dark:hover {
@@ -50,7 +51,7 @@
 }
 
 .main-list-style {
-    list-style-type: none !important;
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }

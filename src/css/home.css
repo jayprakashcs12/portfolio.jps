@@ -91,20 +91,24 @@
     width: 95%;
 }
 
+.btn-home:hover, .pro-btn:hover {
+    transform: scale3d(.98, .98, .01);
+}
+
 .resume-btn {
     background-image: linear-gradient(to right, var(--color02), var(--color09));
 }
 
-.btn-home:hover {
-    background-position: 100% 0;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-    background-position: 100% 0;
+.resume-btn:hover {
+    background-image: linear-gradient(to right, var(--color09), var(--color02));
 }
 
 .dark.resume-btn {
     background-image: linear-gradient(to right, var(--color10), var(--color06));
+}
+
+.dark.resume-btn:hover {
+    background-image: linear-gradient(to right, var(--color06), var(--color10));
 }
 
 .typo-text {

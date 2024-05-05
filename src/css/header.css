@@ -26,6 +26,10 @@
     border: none;
 }
 
+.pro-button:hover {
+    transform: scale3d(.98, .98, .98);
+}
+
 .nav-links {
     text-transform: uppercase;
     text-decoration: none;
