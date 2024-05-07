@@ -30,7 +30,6 @@ const Experience = ({ theme }) => {
             </Container>
         </div>
     )
-
 }
 
 export default Experience;

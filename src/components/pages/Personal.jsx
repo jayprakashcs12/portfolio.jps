@@ -33,7 +33,6 @@ const Personal = ({ theme }) => {
             </Container>
         </div>
     )
-
 }
 
 export default Personal;

@@ -100,7 +100,6 @@ const Contact = ({ theme }) => {
             </Container>
         </div>
     )
-
 }
 
 export default Contact;

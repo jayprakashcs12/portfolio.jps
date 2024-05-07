@@ -19,7 +19,6 @@ const About = ({ theme }) => {
             </Container>
         </div>
     )
-
 }
 
 export default About;

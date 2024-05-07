@@ -25,7 +25,6 @@ const Education = ({ theme }) => {
             </Container>
         </div>
     )
-
 }
 
 export default Education;

@@ -29,7 +29,6 @@ const Skills = ({ theme }) => {
             </Container>
         </div>
     )
-
 }
 
 export default Skills;
