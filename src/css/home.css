@@ -204,5 +204,5 @@
 .dark.pro-submit:hover {
     border: 1px solid var(--color13);
     background-color: var(--color08);
-    color: var(--color11);
+    color: var(--color13);
 }
