@@ -2,7 +2,8 @@ import React, { useEffect } from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import { BioData, TypoStyle } from "../../data/Info";
 import { LiaDownloadSolid } from "react-icons/lia";
-import heroImg from "../../images/photo.png";
+import darkHeroImg from "../../images/darkPhoto.png";
+import heroImg from "../../images/lightPhoto.png";
 import { ReactTyped } from "react-typed";
 
 const Home = ({ theme }) => {
@@ -24,7 +25,7 @@ const Home = ({ theme }) => {
                         </Button>
                     </Col>
                     <Col className='img-div' md={6} sm={12}>
-                        <img src={heroImg} alt="profile" className='pro-img' />
+                        <img src={theme === 'dark' ? darkHeroImg : heroImg} alt="profile" className={`pro-img ${theme}`} />
                     </Col>
                 </Row>
             </Container>
