@@ -42,7 +42,7 @@
 
 .foot-link:hover {
     transform: scale3d(.98, .98, .98);
-    color: var(--color00);
+    color: var( --color01);
     font-weight: 600;
 }
 
