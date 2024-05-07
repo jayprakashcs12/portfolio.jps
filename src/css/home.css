@@ -34,11 +34,11 @@
 }
 
 .pro-input.light, .pro-input.light:active {
-    color: var(--color13);
+    color: var( --color14);
 }
 
 .pro-input::placeholder {
-    color: var(--color13);
+    color: var( --color14);
 }
 
 .pro-input.dark::placeholder {
@@ -47,7 +47,7 @@
 
 .pro-table.light {
     background-color: var(--color03);
-    color:var(--color13);
+    color:var( --color14);
 }
 
 .pro-input:focus {
@@ -80,7 +80,7 @@
     transition: all .4s ease-in-out;
     background-size: 300% 100%;
     text-transform: uppercase;
-    color: var(--color13);
+    color: var( --color14);
     border-radius: 10px;
     padding: 15px 45px;
     text-align: center;
@@ -125,7 +125,7 @@
 
 .dark.pro-table {
     background-color: var(--color08);
-    color: var(--color13);
+    color: var( --color14);
 }
 
 .skill-head {
@@ -144,7 +144,7 @@
 }
 
 .vertical-timeline-element-content {
-    border: 1px solid var(--color13);
+    border: 1px solid var( --color14);
     box-shadow: none;
 }
 
@@ -160,49 +160,49 @@
 }
 
 .pro-reset {
-    border: 1px solid var(--color12);
-    background-color: var(--color11);
-    color: var(--color12);
+    border: 1px solid var( --color13);
+    background-color: var( --color12);
+    color: var( --color13);
 }
 
 .pro-reset:hover {
-    border: 1px solid var(--color12);
-    background-color: var(--color12);
-    color: var(--color13);
+    border: 1px solid var( --color13);
+    background-color: var( --color13);
+    color: var( --color14);
 }
 
 .dark.pro-reset {
-    border: 1px solid var(--color13);
+    border: 1px solid var( --color14);
     background-color: var(--color08);
-    color: var(--color13);
+    color: var( --color14);
 }
 
 .dark.pro-reset:hover {
     border: 1px solid var(--color08);
-    background-color: var(--color13);
+    background-color: var( --color14);
     color: var(--color08);
 }
 
 .pro-submit {
     border: 1px solid var(--color04);
     background-color: var(--color04);
-    color: var(--color13);
+    color: var( --color14);
 }
 
 .pro-submit:hover {
     border: 1px solid var(--color04);
-    background-color: var(--color11);
+    background-color: var( --color12);
     color: var(--color04);
 }
 
 .dark.pro-submit {
     border: 1px solid var(--color08);
-    background-color: var(--color13);
+    background-color: var( --color14);
     color: var(--color08);
 }
 
 .dark.pro-submit:hover {
-    border: 1px solid var(--color13);
+    border: 1px solid var( --color14);
     background-color: var(--color08);
-    color: var(--color13);
+    color: var( --color14);
 }

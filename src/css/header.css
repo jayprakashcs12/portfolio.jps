@@ -1,5 +1,5 @@
 .pro-button, .pro-container, .pro-navbar {
-    background-color: var(--color11);
+    background-color: var( --color12);
     color: var(--color08);
     transition: 0.1s;
 }
@@ -10,7 +10,7 @@
 
 .dark.pro-button, .dark.pro-container, .dark.pro-navbar {
     background-color: var(--color08);
-    color: var(--color13);
+    color: var( --color14);
 }
 
 .main-navbar {

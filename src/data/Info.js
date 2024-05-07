@@ -84,11 +84,11 @@ export let TechnicalSkills = [
 export let theme = 'dark';
 
 export let TimeThemes = {
-  dark:  { content: { background: '#393e46', color: '#ffffff' }, contentArrow: { borderRight: '7px solid #ffffff' }},
-  light: { content: { background: '#08859d', color: '#ffffff' }, contentArrow: { borderRight: '7px solid #08859d' }},
+  dark:  { content: { background: 'var(--color08)', color: 'var(--color14)' }, contentArrow: { borderRight: '7px solid var(--color14)' }},
+  light: { content: { background: 'var(--color03)', color: 'var(--color14)' }, contentArrow: { borderRight: '7px solid var(--color14)' }},
 };
 
-export let TypoStyle = (theme) => ({ color: theme === 'dark' ? '#08859d' : '#854ce6' });
+export let TypoStyle = (theme) => ({ color: theme === 'dark' ? 'var(--color03)' : '( --color11)' });
 
 export let WorkExperience = [
   { id: 1, company: "Lobotus Technology", position: "UI Developer", date: "Jan-2022 - Dec-2023", description: [
