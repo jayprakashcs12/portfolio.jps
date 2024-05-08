@@ -13,7 +13,8 @@ import { BiLogoGmail } from "react-icons/bi";
 
 export let BioData = {
   fullName: "Jay Prakash Singh", roles: ["(Front End Developer)", "(ReactJS Developer)", "(UI Developer)"],
-  resume: "https://drive.google.com/file/d/19ZKBcu6kLepC_wYcGTMEJculz_3zjFrx/view?usp=sharing",
+  // resume: "https://drive.google.com/file/d/19ZKBcu6kLepC_wYcGTMEJculz_3zjFrx/view?usp=sharing",
+  resume: "https://drive.google.com/file/d/1-FUbqK-_R8wnsDTCGddyN58lKl7JraYq/view",
   description:
     `As a motivated and adaptable front-end developer, I thrive on embracing new challenges. My passion for learning drives me to consistently deliver 
     high-quality results. With a positive attitude and a growth mindset, I am committed to making a meaningful contribution to every project I undertake, 
