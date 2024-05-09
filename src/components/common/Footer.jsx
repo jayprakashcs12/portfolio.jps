@@ -10,7 +10,7 @@ const Footer = ({ theme }) => {
             <hr className={`hr-footer ${theme}`} />
             <Container className='foot-content'>
                 <Row>
-                    <Col lg={4} md={6} sm={12} className='mb-2 mt-2'>
+                    <Col lg={4} md={4} sm={12} className='mb-2 mt-2'>
                         <h3 className='pro-foot'>About Me</h3>
                         <p className='foot-text'>
                             I'm an energetic web developer with a sharp eye for ReactJS, endeavoring to make effective and
@@ -27,7 +27,7 @@ const Footer = ({ theme }) => {
                         </ol>
                     </Col>
                     {[...Array(2)].map((_, i) => (
-                        <Col lg={4} md={6} sm={12} className='mb-2 mt-2' key={i}>
+                        <Col lg={4} md={4} sm={12} className='mb-2 mt-2' key={i}>
                             <h3 className='pro-foot'>Social Links</h3>
                             <ol className="main-list-style">
                                 {SocialLinks.slice(i * 4, i * 4 + 4).map((link, j) => (
