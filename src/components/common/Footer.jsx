@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from "react-bootstrap";
-import { ContactsItem, Contacts, SocialLinks } from "../../data/Info";
+import { AboutUs, ContactsItem, Contacts, SocialLinks } from "../../data/Info";
 
 const Footer = ({ theme }) => {
 
@@ -13,9 +13,7 @@ const Footer = ({ theme }) => {
                     <Col lg={4} md={4} sm={12} className='mb-2 mt-2'>
                         <h3 className='pro-foot'>About Me</h3>
                         <p className='foot-text'>
-                            I'm an energetic web developer with a keen eye for ReactJS. I specialize in creating effective and visually stunning software solutions. 
-                            With a strong IT background, I bring both creativity and technical expertise to every project. 
-                            Let's build something amazing together!
+                            {AboutUs.description}
                         </p>
                         <ol className="main-list-style">
                             {ContactsItem.map((item, i) => (

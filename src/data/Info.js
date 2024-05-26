@@ -8,13 +8,17 @@ import { BiLogoGmail } from "react-icons/bi";
 import Home from '../components/pages/Home';
 import { FaCodepen } from "react-icons/fa6";
 
+export let AboutUs = {
+  description: `I'm an energetic web developer with a sharp eye for ReactJS, endeavoring to make effective and outwardly staggering programming arrangements with 
+  an IT foundation.`
+}
+
 export let BioData = {
   fullName: "Jay Prakash Singh", roles: ["(Front End Developer)", "(ReactJS Developer)", "(UI Developer)"],
   resume: "https://drive.google.com/file/d/1-FUbqK-_R8wnsDTCGddyN58lKl7JraYq/view",
-  description:
-    `As a motivated and adaptable front-end developer, I thrive on embracing new challenges. My passion for learning drives me to consistently deliver 
-    high-quality results. With a positive attitude and a growth mindset, I am committed to making a meaningful contribution to every project I undertake, 
-    aiming to achieve greatness in the process`
+  description: `As a motivated and adaptable front-end developer, I thrive on embracing new challenges. My passion for learning drives me to consistently deliver 
+  high-quality results. With a positive attitude and a growth mindset, I am committed to making a meaningful contribution to every project I undertake, 
+  aiming to achieve greatness in the process`
 };
 
 export let Contacts = { 
@@ -26,14 +30,9 @@ export let ContactsItem = [
   { text: Contacts.phoneNumber, url: Contacts.whatsAppUrl, icon: <BsWhatsapp className="social-icon" /> }
 ];
 
-export let EducationDetails = [
-  { id: 1, institution: "Dr. A.P.J. A.K.T.U., Lucknow", degree: "B.Tech", field: "C.S.E.", date: "2012-2016" },
-  { id: 2, institution: "U.P. Board, Prayagraj", degree: "Intermediate", specialization: "PCM", date: "2007-2009" },
-  { id: 3, institution: "U.P. Board, Prayagraj", degree: "High School", specialization: "Science", date: "2005-2007" }
-];
-
 export let JobSummary = { 
-  title: "Professional Summary", description: [
+  title: "Professional Summary", 
+  description: [
     "Over 5+ Years of IT experience which includes 3+ Years of Extensive experience as a Front-End Developer, 1 Year as a PHP Developer & 2+ Year as a ReactJS Developer",
     "Developed responsive websites for smart devices utilizing responsive design techniques and media queries",
     "Extensive experience in developing web pages using HTML, CSS, Bootstrap, JavaScript, and React JS",
