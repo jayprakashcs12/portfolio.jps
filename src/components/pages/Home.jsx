@@ -32,7 +32,7 @@ const Home = ({ theme }) => {
                     <h1 className='pro-head'>{JobSummary.title}</h1>
                     <ul className='mt-2 unorder-list'>
                         {JobSummary.description.map((item, i) => (
-                            <li style={{paddingBottom:"5px"}} key={i}>{item + "."}</li>
+                            <li style={{paddingBottom:"5px", marginLeft:"15px"}} key={i}>{item + "."}</li>
                         ))}
                     </ul>
                 </Row>
