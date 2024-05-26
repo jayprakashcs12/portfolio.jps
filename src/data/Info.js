@@ -1,15 +1,15 @@
+import { BsStackOverflow, BsWhatsapp } from "react-icons/bs";
 import Experience from '../components/pages/Experience';
 import Education from '../components/pages/Education';
 import Personal from '../components/pages/Personal';
+import { FiGithub, FiPhone } from "react-icons/fi";
+import { SlSocialLinkedin } from "react-icons/sl";
 import Contact from '../components/pages/Contact';
 import Skills from '../components/pages/Skills';
 import About from '../components/pages/About';
-import Home from '../components/pages/Home';
-import { FaCodepen, FaInstagram, FaXTwitter } from "react-icons/fa6";
-import { FiFacebook, FiGithub, FiPhone } from "react-icons/fi";
-import { BsStackOverflow, BsWhatsapp } from "react-icons/bs";
-import { SlSocialLinkedin } from "react-icons/sl";
 import { BiLogoGmail } from "react-icons/bi";
+import Home from '../components/pages/Home';
+import { FaCodepen } from "react-icons/fa6";
 
 export let BioData = {
   fullName: "Jay Prakash Singh", roles: ["(Front End Developer)", "(ReactJS Developer)", "(UI Developer)"],
@@ -21,12 +21,10 @@ export let BioData = {
 };
 
 export let Contacts = { 
-  phoneNumber: "8563001092", personName: 'Mail Me', phoneURL: "tel:8563001092", whatsAppUrl: "https://wa.me/8563001092", 
-  mailUrl: "mailto:jayprakash199221@gmail.com",
+  phoneNumber: "8563001092", personName: 'Mail Me', phoneURL: "tel:8563001092", whatsAppUrl: "https://wa.me/8563001092",
 };
 
 export let ContactsItem = [
-  { text: Contacts.personName, url: Contacts.mailUrl, icon: <BiLogoGmail className="social-icon" /> }, 
   { text: Contacts.phoneNumber, url: Contacts.phoneURL, icon: <FiPhone className="social-icon" /> },
   { text: Contacts.phoneNumber, url: Contacts.whatsAppUrl, icon: <BsWhatsapp className="social-icon" /> }
 ];
@@ -65,14 +63,12 @@ export let RoutesComponents = [
   { path: '/skills', component: Skills },
 ];
 
-export let SocialLinks = [
-  { name: 'Codepen', icon: <FaCodepen className="social-icon" />, url: 'https://codepen.io/jayprakashcs12/' },
-  { name: 'Instagram', icon: <FaInstagram className="social-icon" />, url: 'https://www.instagram.com/jayprakashsingh10031/' },
-  { name: 'Github', icon: <FiGithub className="social-icon" />, url: 'https://github.com/jayprakashcs12/' },
+export let SocialLinks = [ 
   { name: 'Linkedin', icon: <SlSocialLinkedin className="social-icon" />, url: 'https://www.linkedin.com/in/jay-prakash-singh-028957128/' },
-  { name: 'Facebook', icon: <FiFacebook className="social-icon" />, url: 'https://www.facebook.com/jayprakash199221/' },
-  { name: 'Twitter', icon: <FaXTwitter className="social-icon" />, url: 'https://twitter.com/jayprakash2108/' },
+  { name: 'Mail Me', icon: <BiLogoGmail className="social-icon" />, url: 'mailto:jayprakash199221@gmail.com' },
+  { name: 'Github', icon: <FiGithub className="social-icon" />, url: 'https://github.com/jayprakashcs12/' },
   { name: 'Stack Overflow', icon: <BsStackOverflow className="social-icon" />, url: 'https://stackoverflow.com/users/18405681/jay-prakash-singh/' },
+  { name: 'Codepen', icon: <FaCodepen className="social-icon" />, url: 'https://codepen.io/jayprakashcs12/' },
 ];
 
 export let TechnicalSkills = [

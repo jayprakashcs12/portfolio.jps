@@ -30,7 +30,7 @@ const Footer = ({ theme }) => {
                         <Col lg={4} md={4} sm={12} className='mb-2 mt-2' key={i}>
                             <h3 className='pro-foot'>Social Links</h3>
                             <ol className="main-list-style">
-                                {SocialLinks.slice(i * 4, i * 4 + 4).map((link, j) => (
+                                {SocialLinks.slice(i * 3, i * 3 + 3).map((link, j) => (
                                     <li key={j} className="list-style">
                                         <a href={link.url} target="_blank" rel="noreferrer noopener" className={`foot-link ${theme}`}>
                                             {link.icon} {link.name}
