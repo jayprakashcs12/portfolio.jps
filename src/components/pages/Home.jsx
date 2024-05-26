@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
-import { BioData, TypoStyle } from "../../data/Info";
+import { BioData, JobSummary, TypoStyle } from "../../data/Info";
 import { LiaDownloadSolid } from "react-icons/lia";
 import darkHeroImg from "../../images/darkPhoto.png";
 import heroImg from "../../images/lightPhoto.png";
@@ -27,6 +27,14 @@ const Home = ({ theme }) => {
                     <Col className='img-div' md={6} sm={12}>
                         <img src={theme === 'dark' ? darkHeroImg : heroImg} alt="profile" className={`pro-img ${theme}`} />
                     </Col>
+                </Row>
+                <Row>
+                    <h1 className='pro-head'>{JobSummary.title}</h1>
+                    <ul className='mt-2 unorder-list'>
+                        {JobSummary.description.map((item, i) => (
+                            <li style={{paddingBottom:"5px"}} key={i}>{item + "."}</li>
+                        ))}
+                    </ul>
                 </Row>
             </Container>
         </div>

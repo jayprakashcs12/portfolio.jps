@@ -1,12 +1,9 @@
 import { BsStackOverflow, BsWhatsapp } from "react-icons/bs";
 import Experience from '../components/pages/Experience';
-import Education from '../components/pages/Education';
-import Personal from '../components/pages/Personal';
 import { FiGithub, FiPhone } from "react-icons/fi";
 import { SlSocialLinkedin } from "react-icons/sl";
 import Contact from '../components/pages/Contact';
 import Skills from '../components/pages/Skills';
-import About from '../components/pages/About';
 import { BiLogoGmail } from "react-icons/bi";
 import Home from '../components/pages/Home';
 import { FaCodepen } from "react-icons/fa6";
@@ -38,28 +35,20 @@ export let EducationDetails = [
 export let JobSummary = { 
   title: "Professional Summary", description: [
     "Over 5+ Years of IT experience which includes 3+ Years of Extensive experience as a Front-End Developer, 1 Year as a PHP Developer & 2+ Year as a ReactJS Developer",
-    "Have a working knowledge of API integration, and Cross-Browser (Platform Compatibility Issues)",
-    "Worked on creating responsive websites for smart devices using responsive design and Media Queries",
+    "Developed responsive websites for smart devices utilizing responsive design techniques and media queries",
     "Extensive experience in developing web pages using HTML, CSS, Bootstrap, JavaScript, and React JS",
-    "Used React-Router to turn an application into a single-page application (SPA)", "Have a working knowledge of AngularJS, ES6, and PHP with CodeIgniter",
-    "Working knowledge of web protocols and standards (HTTP & HTTPS)", "Developed the pages that are compliant with W3C standards"
+    "Have a working knowledge of API integration, and Cross-Browser (Platform Compatibility Issues)",
+    "Knowledgeable in responsive design principles and mobile-first development practices"
   ]
 }
 
 export let NavRoutes = [
-  { navTo: '/', navText: 'Home' }, { navTo: '/about-us', navText: 'About Us' }, { navTo: '/skills', navText: 'Skills' },
-  { navTo: '/experience', navText: 'Experience' }, { navTo: '/education', navText: 'Education' },
-  { navTo: '/personal-info', navText: 'Personal Info' }, { navTo: '/contact-us', navText: 'Contact Us' },
-];
-
-export let PersonalDetails = [
-  { key: `Father's Name`, value: 'Surendra Singh' }, { key: 'Date of Birth', value: '21/08/1992' }, { key: 'Gender', value: 'Male' }, 
-  { key: 'Marital Status', value: 'Single' }, { key: 'Nationality', value: 'Indian' },
+  { navTo: '/', navText: 'Home' }, { navTo: '/experience', navText: 'Experience' }, { navTo: '/skills', navText: 'Skills' },
+  { navTo: '/contact-us', navText: 'Contact Us' },
 ];
 
 export let RoutesComponents = [
-  { path: '/', component: Home }, { path: '/personal-info', component: Personal }, { path: '/experience', component: Experience },
-  { path: '/education', component: Education }, { path: '/contact-us', component: Contact }, { path: '/about-us', component: About },
+  { path: '/', component: Home }, { path: '/experience', component: Experience }, { path: '/contact-us', component: Contact }, 
   { path: '/skills', component: Skills },
 ];
 
@@ -87,37 +76,34 @@ export let TimeThemes = {
 export let TypoStyle = (theme) => ({ color: theme === 'dark' ? 'var(--color03)' : '( --color11)' });
 
 export let WorkExperience = [
-  { id: 1, company: "Lobotus Technology", position: "UI Developer", date: "Jan-2022 - Dec-2023", description: [
-      "Involved in micro front-end design and development of the GUI for the EMR platform", 
-      "Module testing, module integration, and testing all the modules together",
+  { id: 1, company: "Lobotus Technology", position: "UI Developer", date: "Jan-2022 - Dec-2023", 
+    description: [
+      "Involved in micro front-end design and development of the GUI for the EMR platform",
+      "Used React-Router to turn an application into a single-page application (SPA)",
+      "Module testing, module integration, and testing all other modules together",
       "Building reusable components and front-end libraries for future use", 
-      "Use mark-up languages like HTML to create user-friendly web pages",
-      "Develop website features that can enhance the user experience", 
       "Reviewing application requirements and interface designs",
-      "Extensive experience using React-Bootstrap for layout", 
-      "Design changes as per client requirements", 
-      "Write clean and well-structured code", 
-      "Develop responsive web-based UI", 
-      "Playing the role of team helper", 
-      "Including API integration"
+      "Design changes as per client requirements",
+      "Write clean and well-structured code",
+      "Develop responsive web-based UI",
     ]
   },
-  { id: 2, company: "Bangalore Softsell Pvt Ltd", position: "Junior Software Developer", date: "Oct-2019 - Mar-2021", description: [
+  { id: 2, company: "Bangalore Softsell Pvt Ltd", position: "Junior Software Developer", date: "Oct-2019 - Mar-2021", 
+    description: [
       "Utilized AngularJS to develop a single-page application, implementing data binding and synchronization with the server, along with HTML, CSS, Bootstrap, AngularJS & PHP",
       "Involved in designing the user experience interface UI/UX strategy, UI requirements, and converting findings into UI designs",
+      "Have a working knowledge of AngularJS, ES6, and PHP with CodeIgniter",
+      "Develop user interfaces with the latest front-end technologies",
       "Maintaining and optimizing mobile/web applications",
-      "Develop UI with the latest front-end technologies",
-      "Write clean and well-structured codes"
     ]
   },
-  { id: 3, company: "Cybotrix Technology", position: "Web Developer", date: "Sept-2017 - Oct-2019", description: [
-      "Designed HTML templates for use on all pages on the website working with CSS Background, positioning, text, border, margin, padding, and table",
-      "Handled cross-browser compatibility issues & features to enhance user experience",
+  { id: 3, company: "Cybotrix Technology", position: "Web Developer", date: "Sept-2017 - Oct-2019", 
+    description: [
+      "Handled cross-browser compatibility issues & features to enhance user experience", 
       "Optimize web pages for maximum speed and boost their scalability",
       "Updated the website from time to time for special requirements", 
+      "Developed the pages that are compliant with W3C standards", 
       "Ensuring web design is optimized for smartphones",
-      "Extensive experience using Bootstrap for layout",
-      "Troubleshooting problems with performance"
     ]
   }
 ];
