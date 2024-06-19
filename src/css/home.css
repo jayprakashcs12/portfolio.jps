@@ -6,7 +6,10 @@
     justify-content: end;
 }
 
-.btn-row, .img-div, .pro-row, .typo-text {
+.btn-row,
+.img-div,
+.pro-row,
+.typo-text {
     display: flex;
     align-items: center;
 }
@@ -29,16 +32,18 @@
     margin: 2% 0;
 }
 
-.pro-input.light, .pro-input.light:active {
+.pro-input.light,
+.pro-input.light:active {
     background-color: var(--color03);
 }
 
-.pro-input.light, .pro-input.light:active {
-    color: var( --color14);
+.pro-input.light,
+.pro-input.light:active {
+    color: var(--color14);
 }
 
 .pro-input::placeholder {
-    color: var( --color14);
+    color: var(--color14);
 }
 
 .pro-input.dark::placeholder {
@@ -47,7 +52,7 @@
 
 .pro-table.light {
     background-color: var(--color03);
-    color:var( --color14);
+    color: var(--color14);
 }
 
 .pro-input:focus {
@@ -80,7 +85,7 @@
     transition: all .4s ease-in-out;
     background-size: 300% 100%;
     text-transform: uppercase;
-    color: var( --color14);
+    color: var(--color14);
     border-radius: 10px;
     padding: 15px 45px;
     text-align: center;
@@ -91,7 +96,8 @@
     width: 95%;
 }
 
-.btn-home:hover, .pro-btn:hover {
+.btn-home:hover,
+.pro-btn:hover {
     transform: scale3d(.98, .98, .01);
 }
 
@@ -125,7 +131,7 @@
 
 .dark.pro-table {
     background-color: var(--color08);
-    color: var( --color14);
+    color: var(--color14);
 }
 
 .skill-head {
@@ -144,7 +150,7 @@
 }
 
 .vertical-timeline-element-content {
-    border: 1px solid var( --color14);
+    border: 1px solid var(--color14);
     box-shadow: none;
 }
 
@@ -159,50 +165,48 @@
     font-size: 20px;
 }
 
+/* button CSS */
+
+.pro-reset, .pro-reset:hover {
+    border: 1px solid var(--color13);
+}
+
+.pro-reset, .pro-submit:hover, .dark.pro-reset, .dark.pro-submit:hover {
+    background-color:var(--color15);
+}
+
+.pro-reset:hover, .pro-submit, .dark.pro-reset, .dark.pro-submit:hover {
+    color: var(--color14);
+}
+
 .pro-reset {
-    border: 1px solid var( --color13);
-    background-color: var( --color12);
-    color: var( --color13);
+    color: var(--color13);
 }
 
 .pro-reset:hover {
-    border: 1px solid var( --color13);
-    background-color: var( --color13);
-    color: var( --color14);
+    background-color: var(--color13);
 }
 
-.dark.pro-reset {
-    border: 1px solid var( --color14);
-    background-color: var(--color08);
-    color: var( --color14);
-}
-
-.dark.pro-reset:hover {
-    border: 1px solid var(--color08);
-    background-color: var( --color14);
-    color: var(--color08);
+.pro-submit, .pro-submit:hover {
+    border: 1px solid var(--color04);
 }
 
 .pro-submit {
-    border: 1px solid var(--color04);
     background-color: var(--color04);
-    color: var( --color14);
 }
 
 .pro-submit:hover {
-    border: 1px solid var(--color04);
-    background-color: var( --color12);
     color: var(--color04);
 }
 
-.dark.pro-submit {
+.dark.pro-reset:hover, .dark.pro-submit {
     border: 1px solid var(--color08);
-    background-color: var( --color14);
+    background-color:var(--color14);
     color: var(--color08);
 }
 
-.dark.pro-submit:hover {
-    border: 1px solid var( --color14);
-    background-color: var(--color08);
-    color: var( --color14);
+.dark.pro-reset, .dark.pro-submit:hover {
+    border: 1px solid var(--color14);
 }
+
+/* button CSS */
