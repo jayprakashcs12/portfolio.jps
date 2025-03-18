@@ -1,0 +1,45 @@
+.pro-button, .pro-container, .pro-navbar {
+    background-color: var( --color14);
+    color: var(--color08);
+    transition: 0.1s;
+}
+
+.pro-navbar {
+    cursor: pointer;
+}
+
+.dark.pro-button, .dark.pro-container, .dark.pro-navbar {
+    background-color: var(--color08);
+    color: var( --color14);
+}
+
+.main-navbar {
+    box-shadow: rgba(27, 31, 35, 0.15) 0 0 0 1px;
+}
+
+.main-navbar.dark {
+    box-shadow: rgba(255, 255, 255, 0.5) 0 1px 3px 0, rgba(27, 31, 35, 0.15) 0 0 0 1px;
+}
+
+.pro-button {
+    outline: none;
+    border: none;
+}
+
+.pro-button:hover {
+    transform: scale3d(.98, .98, .98);
+}
+
+.nav-links {
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 10px 20px;
+}
+
+.nav-links.active {
+    color: var(--color06);
+}
+
+.nav-content {
+    --bs-gutter-x:0;
+}

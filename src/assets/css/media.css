@@ -1,0 +1,68 @@
+@media only screen and (min-width: 320px) and (max-width: 575.9px) {
+
+    .foot-content, .nav-content, .pro-content {
+        --bs-gutter-x: 2.5rem !important;
+    }
+
+    .typo-text {
+        font-size: 20px !important;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767.9px) {
+
+    .home-row {
+        flex-direction: column-reverse !important;
+    }
+
+    .pro-head, .pro-foot {
+        font-size: 1.5rem !important;
+    }
+
+    .img-div {
+        justify-content: center !important;
+    }
+
+    .pro-img {
+        margin-bottom: .5rem !important;
+    }
+
+    .btn-home {
+        width: 100% !important;
+    }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 991.9px) {
+    
+    .nav-links {
+        margin: 10px 0 !important;
+        text-transform: none;
+    }
+
+    .nav-links, .pro-button {
+        text-align: center !important;
+    }
+
+    .pro-data, .foot-text {
+        text-align: left !important;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1199.9px) {
+
+    .nav-links {
+        text-transform:initial !important;
+    }
+
+    .card-header {
+        font-size: 18px;
+    }
+
+}
+
+@media only screen and (min-width: 1170px) {
+    .vertical-timeline.vertical-timeline--two-columns {
+        width: 100% !important;
+    }
+}
