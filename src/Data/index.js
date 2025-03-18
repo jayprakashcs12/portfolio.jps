@@ -69,7 +69,7 @@ export let theme = 'dark';
 
 export let TimeThemes = {
   dark:  { content: { background: 'var(--color08)', color: 'var(--color14)' }, contentArrow: { borderRight: '7px solid var(--color14)' }},
-  light: { content: { background: 'var(--color03)', color: 'var(--color14)' }, contentArrow: { borderRight: '7px solid var(--color14)' }},
+  light: { content: { background: 'var(--color03)', color: 'var(--color14)' }, contentArrow: { borderRight: '7px solid var(--color03)' }},
 };
 
 export let WorkExperience = [
